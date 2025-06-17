@@ -1,0 +1,22 @@
+footer {
+    display: flex; /* Coloca los hijos en fila */
+    justify-content: space-between; /* Espacio entre ellos */
+    background-color: #222;
+    padding: 20px;
+}
+
+.footer {
+    padding: 10px;
+    width: 20%; /* O puedes usar flex: 1; para que crezcan igual */
+    text-align: left;
+}
+
+.footer h4{
+    color: #FF3CAC;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+  }
+  
