@@ -2,58 +2,6 @@ body{
     background-color: #0D0D1A;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.menu {
-    display: flex;
-    gap: 60px;
-    align-items: center;
-}
-
-.menu a{
-    padding: 12px 20px;
-    border: 2px solid #FF3CAC;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-}
-
-.menu a:hover {
-    color: white;
-    transform: translateY(-2px);
-  }
 
 
 
-
-
-footer {
-    display: flex; /* Coloca los hijos en fila */
-    justify-content: space-between; /* Espacio entre ellos */
-    background-color: #222;
-    padding: 20px;
-}
-
-.footer {
-    padding: 10px;
-    width: 20%; /* O puedes usar flex: 1; para que crezcan igual */
-    text-align: left;
-}
-
-.footer h4{
-    color: #FF3CAC;
-}
-
-.footer a {
-    text-decoration: none;
-    color: white;
-  }
-  
