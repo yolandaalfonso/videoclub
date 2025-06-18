@@ -10,10 +10,17 @@
             "decada": "80",
             "duracion": "109",
             "portada": "img/armaletal.png",
-            "cartelera": true,
+            "disponible": true
+        },
+
+        {
+            "id": "lacosa",
+            "titulo": "La cosa",
+            "genero": "terror",
+            "decada": "80",
+            "duracion": "109",
+            "portada": "img/lacosa.png",
             "disponible": true
         }
-
-        
     ]
 }
