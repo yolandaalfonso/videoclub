@@ -43,4 +43,3 @@ function crearLayout() {
 
 
 crearLayout();
- console.log(footer.innerHTML);
