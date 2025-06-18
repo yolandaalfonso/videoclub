@@ -1,7 +1,6 @@
 function crearLayout() {
-    const footer = document.getElementById('footer');
     const header = document.getElementById('header');
-
+    const footer = document.getElementById('footer');
 
     header.innerHTML = `
     <div class="img-header">
@@ -43,5 +42,5 @@ function crearLayout() {
 }
 
 
-// Al iniciar la página:
 crearLayout();
+ console.log(footer.innerHTML);
