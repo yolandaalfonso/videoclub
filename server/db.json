@@ -5,11 +5,12 @@
             "titulo": "Arma letal",
             "genero": [
                 "comedia",
-                "accion"
+                "acción"
             ],
             "decada": "80",
+            "año": "1987",
             "duracion": "109",
-            "portada": "img/armaletal.png",
+            "portada": "img/covers/armaletal.jpg",
             "disponible": true
         },
 
@@ -18,8 +19,9 @@
             "titulo": "La cosa",
             "genero": "terror",
             "decada": "80",
+            "año": "1982",
             "duracion": "109",
-            "portada": "img/lacosa.png",
+            "portada": "img/covers/lacosa.webp",
             "disponible": true
         }
     ]
