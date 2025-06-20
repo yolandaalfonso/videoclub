@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Videoclub 85</title>
   <link rel="stylesheet" href="layout.css">
-  <link rel="stylesheet" href="catalogo.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu-busqueda {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: black;
+      colo: white;
+      border-right: 1px solid #ccc;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    #menu-busqueda input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    #menu-busqueda button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #menu-busqueda button:hover {
+      background-color: #0056b3;
+    }
+
+    main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+  </style>
+
 </head>
+
 <body style="background-color: black; color: white;">
+  <div id="menu-busqueda">
+    <h2>Menú de Búsqueda</h2>
+    <input type="text" placeholder="Buscar...">
+    <button id="search-button">Buscar</button>
+    <h3>Géneros</h3>
+    <input type="checkbox" id="accion">Acción<br>
+    <input type="checkbox" id="comedia">Comedia<br>
+    <input type="checkbox" id="cifi">Ciencia ficción<br>
+    <input type="checkbox" id="terror">Terror<br>
+  </div>
+  <main>
   <div id="header"></div>
-    <div id="movie">Hola caracola</div>
+  <div id="movie">Hola caracola</div>
   <footer id="footer"></footer>
-    
+
   <script src="layout.js"></script>
   <script src="catalogo.js"></script>
+  </main>
 </body>
 </html>

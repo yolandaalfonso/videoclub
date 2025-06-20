@@ -1,28 +1,40 @@
 {
-    "peliculas": [
-        {
-            "id": "armaletal",
-            "titulo": "Arma letal",
-            "genero": [
-                "comedia",
-                "acción"
-            ],
-            "decada": "80",
-            "año": "1987",
-            "duracion": "109",
-            "portada": "img/covers/armaletal.jpg",
-            "disponible": true
-        },
-
-        {
-            "id": "lacosa",
-            "titulo": "La cosa",
-            "genero": "terror",
-            "decada": "80",
-            "año": "1982",
-            "duracion": "109",
-            "portada": "img/covers/lacosa.webp",
-            "disponible": true
-        }
-    ]
+  "peliculas": [
+    {
+      "id": "armaletal",
+      "titulo": "Arma letal",
+      "genero": [
+        "acción",
+        "comedia"
+      ],
+      "decada": "80",
+      "año": "1987",
+      "duracion": "109",
+      "portada": "img/covers/armaletal.jpg",
+      "disponible": false
+    },
+    {
+      "id": "lacosa",
+      "titulo": "La cosa",
+      "genero": "terror",
+      "decada": "80",
+      "año": "1982",
+      "duracion": "109",
+      "portada": "img/covers/lacosa.webp",
+      "disponible": true
+    },
+    {
+      "id": "terminator2",
+      "titulo": "Terminator 2",
+      "genero": [
+        "acción",
+        "ciencia ficción"
+      ],
+      "decada": "90",
+      "año": "1991",
+      "duracion": "135",
+      "portada": "img/covers/terminator2.jpg",
+      "disponible": false
+    }
+  ]
 }
