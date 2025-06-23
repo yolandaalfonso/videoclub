@@ -1,0 +1,34 @@
+<!-- prueba.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Videoclub</title>
+  <style>
+    .grid-item { border: 1px solid #ccc; padding: 10px; margin: 10px; }
+  </style>
+</head>
+<body>
+  <h1 id="tituloFormulario">Agregar película</h1>
+
+  <form id="formulario">
+    <input type="text" id="titulo" placeholder="Título" required />
+    <input type="text" id="genero" placeholder="Género" required />
+    <input type="text" id="decada" placeholder="Década" required />
+    <input type="number" id="duracion" placeholder="Duración (min)" required />
+    <input type="text" id="portada" placeholder="URL de la portada" required />
+    <label>
+        Disponible:
+        <input type="checkbox" id="disponibilidad" checked />
+      </label>
+    <button type="submit">Guardar</button>
+    <button type="button" id="btnCancelar">Cancelar</button>
+  </form>
+
+  <div id="gridContainer"></div>
+
+  <script src="server/crud.js"></script>
+
+</body>
+</html>
+
