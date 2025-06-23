@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Brush+Script&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -18,23 +24,85 @@
           playsinline
         ></video>
       </header>
-      <nav></nav>
-      <div class="advantages"></div>
+      <nav>
+        <div class="nav-btn"><span class="nav-text">Home</span></div>
+        <div class="nav-btn"><span class="nav-text">Catalogo</span></div>
+        <div class="nav-btn"><span class="nav-text">Alquila tu sala</span></div>
+        <div class="nav-btn"><span class="nav-text">Contacto</span></div>
+      </nav>
+      <div class="advantages">
+        <span class="advantages-up"
+          ><h1>
+            Llevamos más de 30 años bridando el mejor servicio del cine.
+          </h1></span
+        >
+        <div class="advantages-column">
+          <div class="advantages-column-item">
+            <img src="../source/medal.svg" alt="medal" />
+            <h3>Calidad</h3>
+            <span
+              >Nos avala una calidad inmejorable, todos nuestros productos
+              originales y en perfecto estado.</span
+            >
+          </div>
+          <div class="advantages-column-item">
+            <img src="../source/camera.svg" alt="camera" />
+            <h3>Films</h3>
+            <span
+              >Todos los formatos Dvd - Blu-ray - Blu-ray 4K para disfrutar del
+              mejor cine.</span
+            >
+          </div>
+          <div class="advantages-column-item">
+            <img src="../source/gamepad.svg" alt="Game" />
+            <h3>Game</h3>
+            <span>Juegos de Ps4 - Ps5 - Wii </span>
+          </div>
+        </div>
+      </div>
       <div class="carrousel-section">
-        <div class="carrousell1"></div>
-        <div class="carrousell2"></div>
-        <div class="carrousell3"></div>
-        <a href="" class="btn_more_films"
+        <div id="carrousell-1" class="carrousell">
+          <img
+            style="left: -5px; transform: rotate(180deg)"
+            class="carrousell-arrow"
+            src="../source/arrow.svg"
+            alt="arrow"
+          />
+          <img
+            style="right: -5px"
+            class="carrousell-arrow"
+            src="../source/arrow.svg"
+            alt="arrow"
+          />
+          <span class="carrousell-categoria">ESTRENOS</span>
+          <div class="carrousell-items">
+            <div class="carrousell-item">
+              <img src="../source/poster.jpeg" alt="poster" />
+              <span class="carrousell-movie-title">Nombre pelicula</span>
+            </div>
+            <div class="carrousell-item">
+              <img src="../source/poster.jpeg" alt="poster" />
+              <span class="carrousell-movie-title">Nombre pelicula</span>
+            </div>
+            <div class="carrousell-item">
+              <img src="../source/poster.jpeg" alt="poster" />
+              <span class="carrousell-movie-title">Nombre pelicula</span>
+            </div>
+          </div>
+        </div>
+        <div id="carrousell-2" class="carrousell"></div>
+        <div id="carrousell-3" class="carrousell"></div>
+        <a href="" class="btn-more-films"
           ><!--<button>Más películas</button>--></a
         >
       </div>
-      <div class="location_contact_section">
-        <div class="gradient_text"></div>
-        <div class="location_foto">
+      <div class="location-contact-section">
+        <div class="gradient-text"></div>
+        <div class="location-foto">
           <div class="location"></div>
-          <div class="front_foto"></div>
+          <div class="front-foto"></div>
         </div>
-        <div class="bg_video"></div>
+        <div class="bg-video"></div>
         <div class="contact"></div>
       </div>
       <footer></footer>
