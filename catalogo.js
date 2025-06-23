@@ -22,7 +22,7 @@ async function fetchMovies() {
 
 async function loadMovies(pelis=null) {
     
-         if (!pelis) {
+        if (!pelis) {
         pelis = await fetchMovies();
         if (!pelis) return; // Si no hay películas, salir de la función
         }
@@ -59,12 +59,12 @@ async function cambiarDisponibilidad(peliId, estado) {
             body: JSON.stringify({ disponible: estado })
         });
 
-        if (!res.ok) throw new Error("Error al cambiar disponibilidad");
+        if (!res.ok) throw new Error("Error en la reserva/devolución.");
 
         loadMovies();
 
     } catch (err) {
-        console.error("No se pudo cambiar la disponibilidad:", err);
+        console.error("No se pudo realizar la reserva/devolución:", err);
     }
 }
 
@@ -82,42 +82,51 @@ document.addEventListener("click", function (e) {
 
 
 
-//REVISAR BIEN EL LUNES, resultado de IA que funciona a medias
-function filtrarPeliculas() {
-    // Obtener los géneros seleccionados
-    const generosSeleccionados = [
-        'accion', 'comedia', 'cifi', 'terror'
-    ].filter(id => document.getElementById(id).checked);
+async function filtrarPeliculas() {
+    // Obtener todas las películas
+    const pelis = await fetchMovies();
+    if (!pelis) return;
 
-    // Obtener las películas usando fetchMovies
-    fetchMovies().then(peliculas => {
-        // Filtrar las películas según los géneros seleccionados
-        const peliculasFiltradas = peliculas.filter(pelicula => {
-            // Si no se han seleccionado géneros, se muestran todas las películas
-            if (generosSeleccionados.length === 0) {
-                return true;
-            }
-
-            // Verificar si el género de la película está en la lista de géneros seleccionados
-            let generosPelicula;
-            if (Array.isArray(pelicula.genero)) {
-                // Si pelicula.genero es un array, convertir cada elemento a minúsculas
-                generosPelicula = pelicula.genero.map(genero => genero.toLowerCase());
-            } else if (typeof pelicula.genero === 'string') {
-                // Si pelicula.genero es una cadena, convertirla a minúsculas
-                generosPelicula = [pelicula.genero.toLowerCase()];
-            } else {
-                // Si pelicula.genero no es un array ni una cadena, asignar un array vacío
-                generosPelicula = [];
-            }
-
-            // Verificar si algún género de la película coincide con los géneros seleccionados
-            return generosPelicula.some(genero => generosSeleccionados.includes(genero));
-        });
-
-        // Mostrar las películas filtradas
-        loadMovies(peliculasFiltradas);
-    }).catch(error => {
-        console.error('Error al filtrar las películas:', error);
+    // Obtener los géneros seleccionados (ids de los checkboxes)
+    const generosSeleccionados = [];
+    const checkboxes = document.querySelectorAll('#menu-busqueda input[type="checkbox"]:checked');
+    
+    checkboxes.forEach(checkbox => {
+        // Mapear el id del checkbox al género correspondiente (ej: "cifi" → "ciencia ficción")
+        switch(checkbox.id) {
+            case 'accion':
+                generosSeleccionados.push('acción');
+                break;
+            case 'cifi':
+                generosSeleccionados.push('ciencia ficción');
+                break;
+            case 'comedia':
+                generosSeleccionados.push('comedia');
+                break;
+            case 'terror':
+                generosSeleccionados.push('terror');
+                break;
+        }
     });
+
+    // Si no hay géneros seleccionados, mostrar todas las películas
+    if (generosSeleccionados.length === 0) {
+        loadMovies(pelis);
+        return;
+    }
+
+    // Filtrar películas que incluyan TODOS los géneros seleccionados
+    const pelisFiltradas = pelis.filter(peli => {
+        // Normalizar el campo 'genero' a un array (por si es un string)
+        const generosPeli = Array.isArray(peli.genero) ? peli.genero : [peli.genero];
+        
+        // Verificar que la película tenga TODOS los géneros seleccionados
+        const cumple = generosSeleccionados.every(genero => generosPeli.includes(genero));
+    console.log(`Película: ${peli.titulo}, Géneros: ${generosPeli}, Cumple: ${cumple}`);
+    return cumple;
+    });
+
+    // Cargar las películas filtradas
+    loadMovies(pelisFiltradas);
 }
+

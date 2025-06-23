@@ -7,7 +7,7 @@
         "acción",
         "comedia"
       ],
-      "decada": "80",
+      "decada": "1980",
       "año": "1987",
       "duracion": "109",
       "portada": "img/covers/armaletal.jpg",
@@ -17,7 +17,7 @@
       "id": "lacosa",
       "titulo": "La cosa",
       "genero": "terror",
-      "decada": "80",
+      "decada": "1980",
       "año": "1982",
       "duracion": "109",
       "portada": "img/covers/lacosa.webp",
@@ -30,7 +30,7 @@
         "acción",
         "ciencia ficción"
       ],
-      "decada": "90",
+      "decada": "1990",
       "año": "1991",
       "duracion": "135",
       "portada": "img/covers/terminator2.jpg",
