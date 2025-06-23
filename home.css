@@ -205,3 +205,68 @@ body{
     line-height: 1.5;
     margin: 0;
 }
+
+/* Pagina Modal Reserva */
+.modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(13, 13, 26, 0.99); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* El truco para ocultar/mostrar con una transición suave */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+    z-index: 1000; /* Nos aseguramos de que esté por encima de todo */
+}
+
+/*La clase que mostrará el modal (JavaScript) */
+.modal-overlay.modal-visible {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s; /* Quitamos el retraso al mostrarlo */
+}
+
+/*Contenido del modal (la ventana en sí) */
+.modal-content {
+    position: relative; 
+    transform: scale(0.9); /* Efecto inicial para que parezca que crece al abrirse */
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Efecto de crecimiento al mostrarse el modal */
+.modal-overlay.modal-visible .modal-content {
+    transform: scale(1);
+}
+
+/*El botón de cerrar (la 'X') */
+.close-modal-btn {
+    position: absolute;
+    top: 40px;   /* Lo posicionamos un poco fuera de la ventana */
+    right: -40px;
+    background-color: #ff3cac;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%; /* Lo hacemos redondo */
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    line-height: 30px; 
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff3cac;
+    transition: all 0.2s ease;
+    z-index: 1001; /* Nos aseguramos que esté por encima del contenido del modal */
+}
+
+.close-modal-btn:hover {
+    background-color: white;
+    color: #ff3cac;
+    transform: scale(1.1) rotate(90deg); /* Efecto al pasar el ratón */
+}
