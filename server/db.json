@@ -7,8 +7,7 @@
         "acción",
         "comedia"
       ],
-      "decada": "1980",
-      "año": "1987",
+      "anno": "1987",
       "duracion": "109",
       "portada": "img/covers/armaletal.jpg",
       "disponible": false
@@ -16,9 +15,8 @@
     {
       "id": "lacosa",
       "titulo": "La cosa",
-      "genero": "terror",
-      "decada": "1980",
-      "año": "1982",
+      "genero": ["terror"],
+      "anno": "1982",
       "duracion": "109",
       "portada": "img/covers/lacosa.webp",
       "disponible": true
@@ -30,11 +28,28 @@
         "acción",
         "ciencia ficción"
       ],
-      "decada": "1990",
-      "año": "1991",
+      "anno": "1991",
       "duracion": "135",
       "portada": "img/covers/terminator2.jpg",
       "disponible": false
+    },
+    {
+      "id": "nosferatu1922",
+      "titulo": "Nosferatu",
+      "genero": ["terror"],
+      "anno": "1922",
+      "duracion": "91",
+      "portada": "img/covers/nosferatu1922.jpg",
+      "disponible": true
+    },
+    {
+      "id": "nosferatu2024",
+      "titulo": "Nosferatu",
+      "genero": ["terror"],
+      "anno": "2024",
+      "duracion": "132",
+      "portada": "img/covers/nosferatu2024.jpg",
+      "disponible": true
     }
   ]
 }
