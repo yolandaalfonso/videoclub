@@ -1,5 +1,7 @@
 const API_URL = "http://localhost:3000/peliculas";
 
+let peliculasCache = null;
+
 const movie = document.getElementById("movie");
 
 const searchBtn = document.getElementById('search-button');
@@ -16,7 +18,8 @@ async function fetchMovies() {
     try {
         const res = await fetch(API_URL);
         const pelis = await res.json();
-        return pelis;
+// Ordena las películas por orden alfabético antes de devolverlas
+        return pelis.sort((a, b) => a.titulo.localeCompare(b.titulo));
     } catch (error) {
         console.error("Error al cargar películas:", error);
     }
@@ -28,7 +31,8 @@ async function loadMovies(pelis = null) {
 
     if (!pelis) {
         pelis = await fetchMovies();
-        if (!pelis) return; // Si no hay películas, salir de la función
+        if (!pelis) return;
+        peliculasCache = pelis; // Guarda en cache
     }
     const fichaPeli = pelis.map(peli => {
         return `
@@ -87,8 +91,9 @@ document.addEventListener("click", function (e) {
 
 
 async function filtrarPeliculas() {
-    // Obtener todas las películas
-    const pelis = await fetchMovies();
+    // Usa las películas en cache (si existen) o haz fetch solo la primera vez
+    console.log(peliculasCache);
+    const pelis = peliculasCache || await fetchMovies();
     if (!pelis) return;
 
     // Obtener texto de búsqueda por título

@@ -15,7 +15,7 @@
     {
       "id": "lacosa",
       "titulo": "La cosa",
-      "genero": ["terror"],
+      "genero": ["ciencia ficción", "terror"],
       "anno": "1982",
       "duracion": "109",
       "portada": "img/covers/lacosa.webp",
