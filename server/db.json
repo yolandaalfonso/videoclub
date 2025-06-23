@@ -1,0 +1,26 @@
+{
+    "peliculas": [
+        {
+            "id": "armaletal",
+            "titulo": "Arma letal",
+            "genero": [
+                "comedia",
+                "accion"
+            ],
+            "decada": "80",
+            "duracion": "109",
+            "portada": "img/armaletal.png",
+            "disponible": true
+        },
+
+        {
+            "id": "lacosa",
+            "titulo": "La cosa",
+            "genero": "terror",
+            "decada": "80",
+            "duracion": "109",
+            "portada": "img/lacosa.png",
+            "disponible": true
+        }
+    ]
+}

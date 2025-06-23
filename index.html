@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="layout.css">
+    <title>Videoclub</title>
+</head>
+<body>
+    <div class="contenedor" id="header"></div>
+
+    <h2 class="titulo">ESTRENOS</h2>
+  <div class="carousel-container">
+    <button class="arrow left" onclick="scrollCarousel(-1)">&#10094;</button>
+    
+    <div class="carousel" id="carousel">
+      <div class="movie">
+        <img src="https://image.tmdb.org/t/p/original/vAlIRnwdp17A6HsOcEoqZJk0ZqJ.jpg" alt="Pelicula Ballerina">
+        <p>Ballerina</p>
+      </div>
+      <div class="movie">
+        <img src="https://image.tmdb.org/t/p/original/sGFO6VshDEQ9vX4tOSobLJpkNhq.jpg" alt="Pelicula entrenar a tu dragón">
+        <p>Cómo Entrenar a tu Dragón</p>
+      </div>
+      <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg" alt="Pelicula Lilo & Stitch">
+        <p>Lilo & Stitch</p>
+      </div>
+      <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frNkbclQpexf3aUzZrnixF3t5Hw.jpg" alt="pelicula destino final">
+        <p>Destino Final: Lazos de Sangre</p>
+      </div>
+      <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvIqaDUC48dwfd7taKczB7909Qg.jpg" alt="pelicula 28 años después">
+        <p>28 Años Después</p>
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="scrollCarousel(1)">&#10095;</button>
+  </div>
+        
+        <footer id="footer"></footer>
+      </div>
+      <script src="carousel.js"></script>
+      <script src="layout.js"></script>
+</body>
+</html>
