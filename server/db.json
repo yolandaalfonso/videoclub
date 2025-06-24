@@ -10,15 +10,6 @@
       "anno": "1987",
       "duracion": "109",
       "portada": "img/covers/armaletal.jpg",
-      "disponible": false
-    },
-    {
-      "id": "lacosa",
-      "titulo": "La cosa",
-      "genero": ["ciencia ficción", "terror"],
-      "anno": "1982",
-      "duracion": "109",
-      "portada": "img/covers/lacosa.webp",
       "disponible": true
     },
     {
@@ -34,9 +25,47 @@
       "disponible": false
     },
     {
+      "id": "persiguiendoaamy",
+      "titulo": "Persiguiendo a Amy",
+      "genero": [
+        "comedia",
+        "romántica"
+      ],
+      "anno": "1997",
+      "duracion": "113",
+      "portada": "img/covers/persiguiendoaamy.jpg",
+      "disponible": true
+    },
+    {
+      "id": "lacosa",
+      "titulo": "La cosa",
+      "genero": [
+        "ciencia ficción",
+        "terror"
+      ],
+      "anno": "1982",
+      "duracion": "109",
+      "portada": "img/covers/lacosa.webp",
+      "disponible": false
+    },
+    {
+      "id": "eldiariodenoah",
+      "titulo": "El diario de Noa",
+      "genero": [
+        "drama",
+        "romántica"
+      ],
+      "anno": "2004",
+      "duracion": "124",
+      "portada": "img/covers/eldiariodenoa.jpg",
+      "disponible": false
+    },
+    {
       "id": "nosferatu1922",
       "titulo": "Nosferatu",
-      "genero": ["terror"],
+      "genero": [
+        "terror"
+      ],
       "anno": "1922",
       "duracion": "91",
       "portada": "img/covers/nosferatu1922.jpg",
@@ -45,7 +74,9 @@
     {
       "id": "nosferatu2024",
       "titulo": "Nosferatu",
-      "genero": ["terror"],
+      "genero": [
+        "terror"
+      ],
       "anno": "2024",
       "duracion": "132",
       "portada": "img/covers/nosferatu2024.jpg",

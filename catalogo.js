@@ -19,7 +19,7 @@ async function fetchMovies() {
         const res = await fetch(API_URL);
         const pelis = await res.json();
 // Ordena las películas por orden alfabético antes de devolverlas
-        return pelis.sort((a, b) => a.titulo.localeCompare(b.titulo));
+        return pelis;
     } catch (error) {
         console.error("Error al cargar películas:", error);
     }
@@ -33,7 +33,11 @@ async function loadMovies(pelis = null) {
         pelis = await fetchMovies();
         if (!pelis) return;
         peliculasCache = pelis; // Guarda en cache
-    }
+    };
+
+    // Ordenar alfabéticamente el array de las películas
+    pelis.sort((a, b) => a.titulo.localeCompare(b.titulo));
+
     const fichaPeli = pelis.map(peli => {
         return `
         <div class="ficha">
@@ -43,8 +47,8 @@ async function loadMovies(pelis = null) {
             <p><strong>Duración: </strong>${peli.duracion} min</p>
             <img src="${peli.portada}" alt="Portada de ${peli.titulo}" class="portada" width="300px">
             ${peli.disponible
-                ? `<button class="reservar" data-id="${peli.id}"">Reservar</button>`
-                : `<button class="devolver" data-id="${peli.id}"">Devolver</button>`}
+                ? `<button class="reservar" data-id="${peli.id}">Reservar</button>`
+                : `<button class="devolver" data-id="${peli.id}">Devolver</button>`}
         </div>
         `;
     });
@@ -68,8 +72,8 @@ async function cambiarDisponibilidad(peliId, estado) {
         });
 
         if (!res.ok) throw new Error("Error en la reserva/devolución.");
-
-        loadMovies();
+        const datosActualizados = await res.json();
+        loadMovies(datosActualizados);
 
     } catch (err) {
         console.error("No se pudo realizar la reserva/devolución:", err);
@@ -115,6 +119,12 @@ async function filtrarPeliculas() {
                 break;
             case 'comedia':
                 generosSeleccionados.push('comedia');
+                break;
+            case 'drama':
+                generosSeleccionados.push('drama');
+                break;
+            case 'romantica':
+                generosSeleccionados.push('romántica');
                 break;
             case 'terror':
                 generosSeleccionados.push('terror');
