@@ -73,3 +73,25 @@ function scrollCarousel(direction) {
 }
   
 // ---------------------END-MIGUEL--------------------
+
+
+// ---------------------Sofi---------------------
+
+function initMap() {
+    
+    const ubicacion = { lat: 43.527979078623225, lng: -5.664691001959122 };
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: ubicacion
+    });
+
+
+    new google.maps.Marker({
+        position: ubicacion,
+        map: map,
+        title: 'VideoCLUB85'
+    })
+}
+
+
+// ---------------------Sofi---------------------
