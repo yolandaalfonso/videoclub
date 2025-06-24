@@ -1,0 +1,70 @@
+body {
+  background-color: #0d0c1d;
+  font-family: Inria Sans, Sans Serif;
+  color: #ccc;
+}
+
+#adminBtn {
+  margin: 20px;
+  padding: 10px 20px;
+  background: #3399ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 25, 0.95);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 0 15px #3399ff;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  background: #0d0c1d;
+  border: 1px solid #3399ff;
+  color: #fff;
+}
+
+.checkbox-group label {
+  display: block;
+}
+
+#agregarBtn {
+  background: #3399ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#cerrarBtn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #999;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}

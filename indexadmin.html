@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Película</title>
+  <link rel="stylesheet" href="styleadmin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <button id="adminBtn">Admin</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Agregar una nueva película a la base de datos</h2>
+      
+      <label>Título</label>
+      <input type="text" id="titulo">
+
+      <label>Año</label>
+      <input type="number" id="año">
+
+      <label>Duración</label>
+      <input type="number" id="duracion">
+
+      <label>Portada</label>
+      <input type="text" id="portada">
+
+      <label>Género</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="genero" value="Comedia"> Comedia</label>
+        <label><input type="checkbox" name="genero" value="Accion"> Acción</label>
+        <label><input type="checkbox" name="genero" value="Drama"> Drama</label>
+        <label><input type="checkbox" name="genero" value="Terror"> Terror</label>
+      </div>
+
+      <label>Cartelera</label>
+      <label><input type="radio" name="cartelera" value="Sí"> Sí</label>
+      <label><input type="radio" name="cartelera" value="No"> No</label>
+
+      <label>Disponible</label>
+      <label><input type="radio" name="disponible" value="Sí"> Sí</label>
+      <label><input type="radio" name="disponible" value="No"> No</label>
+
+      <button id="agregarBtn">Agregar película</button>
+      <button id="cerrarBtn">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="scriptadmin.js"></script>
+</body>
+</html>
