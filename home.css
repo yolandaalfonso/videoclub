@@ -15,7 +15,7 @@ body{
   position: relative;
   max-width: 1200px;
   margin: auto;
-  padding: 40px;
+  padding: 50px 40px;
   overflow: hidden;
 }
 
@@ -23,14 +23,15 @@ body{
   display: flex;
   gap: 20px;
   transition: transform 0.3s ease-in-out;
-  overflow-x: hidden;
+  overflow-x: hidden;;
   scroll-behavior: smooth;
   padding-bottom: 30px;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 5px;
 }
 
 .movie {
+  position: relative;
   background-color: #1c1c2e;
   border: 2px solid #8f00ff;
   border-radius: 10px;
@@ -38,11 +39,13 @@ body{
   width: 200px;
   flex-shrink: 0;
   transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 1;
 }
 
 .movie:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #ff00ff;
+  z-index: 10;
 }
 
 .movie img {
