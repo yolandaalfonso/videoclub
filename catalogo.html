@@ -4,91 +4,55 @@
 <head>
   <title>Videoclub 85</title>
   <link rel="stylesheet" href="layout.css">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    #menu-busqueda {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 100%;
-      background-color: black;
-      color: white;
-      border-right: 1px solid #ccc;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    #menu-busqueda input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-    }
-
-    #menu-busqueda button {
-      width: 100%;
-      padding: 10px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    #menu-busqueda button:hover {
-      background-color: #0056b3;
-    }
-
-    main {
-      margin-left: 220px;
-      padding: 20px;
-    }
-  </style>
-
+  <link rel="stylesheet" href="catalogo.css">
 </head>
 
 <body style="background-color: black; color: white;">
-  <div id="menu-busqueda">
-    <h2>Menú de Búsqueda</h2>
-    <input type="text" placeholder="Buscar...">
-    <button id="search-button">Buscar</button>
-    <h3>Géneros</h3>
-    <input type="checkbox" id="accion">Acción<br>
-    <input type="checkbox" id="comedia">Comedia<br>
-    <input type="checkbox" id="cifi">Ciencia ficción<br>
-    <input type="checkbox" id="drama">Drama<br>
-    <input type="checkbox" id="romantica">Romántica<br>
-    <input type="checkbox" id="terror">Terror<br>
 
-    <label for="decada">Década: </label>
-<select name="decada" id="decada">
-  <option value="todas">Todas</option>
-  <option value="1920">1920</option>
-  <option value="1930">1930</option>
-  <option value="1940">1940</option>
-  <option value="1950">1950</option>
-  <option value="1960">1960</option>
-  <option value="1970">1970</option>
-  <option value="1980">1980</option>
-  <option value="1990">1990</option>
-  <option value="2000">2000</option>
-  <option value="2010">2010</option>
-  <option value="2020">2020</option>
-</select>
+  <div id="main-content-wrapper">
+    <header id="header">
+        <img src="img/tigerheader.png" alt="Logotipo de Videoclub 85">
+        <h1 id="catalogo-title">Catálogo</h1>
+  </header>
+    <aside id="menu-busqueda">
+      <h2>Menú de Búsqueda</h2>
+      <input type="text" placeholder="Buscar...">
+      <button id="search-button">Buscar</button>
+      <h3>Géneros</h3>
+      <input type="checkbox" id="accion">Acción<br>
+      <input type="checkbox" id="comedia">Comedia<br>
+      <input type="checkbox" id="cifi">Ciencia ficción<br>
+      <input type="checkbox" id="drama">Drama<br>
+      <input type="checkbox" id="romantica">Romántica<br>
+      <input type="checkbox" id="terror">Terror<br>
+
+      <label for="decada">Década: </label>
+      <select name="decada" id="decada">
+        <option value="todas">Todas</option>
+        <option value="1920">1920</option>
+        <option value="1930">1930</option>
+        <option value="1940">1940</option>
+        <option value="1950">1950</option>
+        <option value="1960">1960</option>
+        <option value="1970">1970</option>
+        <option value="1980">1980</option>
+        <option value="1990">1990</option>
+        <option value="2000">2000</option>
+        <option value="2010">2010</option>
+        <option value="2020">2020</option>
+      </select>
+    </aside>
+
+    <main id="movie">
+      <p>Hola caracola</p> </main>
   </div>
-  <main>
-  <div id="header"></div>
-  <div id="movie">Hola caracola</div>
-  <footer id="footer"></footer>
 
-  <script src="layout.js"></script>
+  <footer id="footer">
+    <p>&copy; 2025 Videoclub 85</p>
+  </footer>
+
+
   <script src="catalogo.js"></script>
-  </main>
 </body>
+
 </html>
