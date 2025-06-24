@@ -114,11 +114,17 @@ async function filtrarPeliculas() {
             case 'accion':
                 generosSeleccionados.push('acción');
                 break;
+            case 'aventura':
+                generosSeleccionados.push('aventura');
+                break;
             case 'cifi':
                 generosSeleccionados.push('ciencia ficción');
                 break;
             case 'comedia':
                 generosSeleccionados.push('comedia');
+                break;
+            case 'crimen':
+                generosSeleccionados.push('crimen');
                 break;
             case 'drama':
                 generosSeleccionados.push('drama');

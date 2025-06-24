@@ -58,7 +58,7 @@
       "anno": "2004",
       "duracion": "124",
       "portada": "img/covers/eldiariodenoa.jpg",
-      "disponible": false
+      "disponible": true
     },
     {
       "id": "nosferatu1922",
@@ -80,6 +80,150 @@
       "anno": "2024",
       "duracion": "132",
       "portada": "img/covers/nosferatu2024.jpg",
+      "disponible": true
+    },
+    {
+      "id": "interestelar",
+      "titulo": "Interstellar",
+      "genero": [
+        "ciencia ficción",
+        "drama"
+      ],
+      "anno": "2014",
+      "duracion": "169",
+      "portada": "img/covers/interestelar.jpg",
+      "disponible": true
+    },
+    {
+      "id": "elgranlebowski",
+      "titulo": "El Gran Lebowski",
+      "genero": [
+        "comedia",
+        "crimen"
+      ],
+      "anno": "1998",
+      "duracion": "117",
+      "portada": "img/covers/elgranlebowski.jpg",
+      "disponible": false
+    },
+    {
+      "id": "matrix",
+      "titulo": "Matrix",
+      "genero": [
+        "ciencia ficción",
+        "acción"
+      ],
+      "anno": "1999",
+      "duracion": "136",
+      "portada": "img/covers/matrix.jpg",
+      "disponible": true
+    },
+    {
+      "id": "casablanca",
+      "titulo": "Casablanca",
+      "genero": [
+        "drama",
+        "romántica"
+      ],
+      "anno": "1942",
+      "duracion": "102",
+      "portada": "img/covers/casablanca.jpg",
+      "disponible": true
+    },
+    {
+      "id": "arcaperdida",
+      "titulo": "En Busca del Arca Perdida",
+      "genero": [
+        "aventura",
+        "acción"
+      ],
+      "anno": "1981",
+      "duracion": "115",
+      "portada": "img/covers/arcaperdida.jpg",
+      "disponible": true
+    },
+    {
+      "id": "amelie",
+      "titulo": "Amélie",
+      "genero": [
+        "comedia",
+        "romántica"
+      ],
+      "anno": "2001",
+      "duracion": "122",
+      "portada": "img/covers/amelie.jpg",
+      "disponible": true
+    },
+    {
+      "id": "pulpfiction",
+      "titulo": "Pulp Fiction",
+      "genero": [
+        "crimen",
+        "drama"
+      ],
+      "anno": "1994",
+      "duracion": "154",
+      "portada": "img/covers/pulpfiction.jpg",
+      "disponible": true
+    },
+    {
+      "id": "conanelbarbaro",
+      "titulo": "Conan el Bárbaro",
+      "genero": [
+        "acción",
+        "aventura",
+        "fantasía"
+      ],
+      "anno": "1982",
+      "duracion": "129",
+      "portada": "img/covers/conanelbarbaro.jpg",
+      "disponible": true
+    },
+    {
+      "id": "viernes13_1980",
+      "titulo": "Viernes 13",
+      "genero": [
+        "terror"
+      ],
+      "anno": "1980",
+      "duracion": "95",
+      "portada": "img/covers/viernes13_1980.jpg",
+      "disponible": true
+    },
+    {
+      "id": "lacomunidaddelanillo",
+      "titulo": "El Señor de los Anillos: La Comunidad del Anillo",
+      "genero": [
+        "fantasía",
+        "aventura",
+        "drama"
+      ],
+      "anno": "2001",
+      "duracion": "178",
+      "portada": "img/covers/lacomunidaddelanillo.jpg",
+      "disponible": true
+    },
+    {
+      "id": "lamatanzadetexas1974",
+      "titulo": "La Matanza de Texas",
+      "genero": [
+        "terror",
+        "slasher"
+      ],
+      "anno": "1974",
+      "duracion": "83",
+      "portada": "img/covers/lamatanzadetexas1974.jpg",
+      "disponible": false
+    },
+    {
+      "id": "ritossatanicosdracula",
+      "titulo": "Los Ritos Satánicos de Drácula",
+      "genero": [
+        "terror"
+      ],
+      "anno": "1973",
+      "duracion": "88",
+      "portada": "img/covers/ritossatanicosdracula.jpg",
       "disponible": true
     }
   ]
