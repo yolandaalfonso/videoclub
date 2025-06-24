@@ -1,45 +1,5 @@
-function crearLayout() {
-    const header = document.getElementById('header');
-    const footer = document.getElementById('footer');
 
-    header.innerHTML = `
-    <div class="img-header">
-        <img src="img/Header.png" alt="logo Videoclub" width="1420">
-      </div>
-        <nav>
-          <!--<button class="button-toggle">☰</button>-->
-          <div class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="">Catálogo</a>
-            <a href="#" id="open-modal-btn">Alquila tu sala</a>
-            <a href="">Contacto</a>
-          </div>
-        </nav>
-    `;
-
-    footer.innerHTML = `
-            <div class="footer">
-                <h4>Videoclub</h4>
-                <p><a href="/politica-de-privacidad">Política de Privacidad</a></p>
-                <p><a href="/contacto">Contacto</a></p>
-            </div>
-            <div class="footer">
-                <h4>Cine</h4>
-                <p><a href="/politica-de-privacidad">Reserva</a></p>
-                <p><a href="/contacto">Cartelera</a></p>
-            </div>
-            <div class="footer">
-                <h4>Nosotros</h4>
-                <p><a href="/politica-de-privacidad">Conócenos</a></p>
-                <p><a href="/contacto">Empleo</a></p>
-            </div>
-            <div class="footer">
-                <h4>Contacto</h4>
-                <p><a href="/politica-de-privacidad">Contacto</a></p>
-                <p><a href="/contacto">Preguntas frecuentas</a></p>
-            </div>
-`;
-}
+// ---------------MARISOL
 
 // LÓGICA PARA LA VENTANA MODAL
 
@@ -91,6 +51,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-// crearLayout();
-//  console.log(footer.innerHTML);
+// ------------------------END-MARISOL------------------
+// ------------------------MIGUEL-----------------------
+function scrollCarousel(direction) {
+    const carousel = document.getElementById("carousel");
+  //   //const movieWidth = carousel.querySelector(".movie").offsetWidth + 20; // ancho + gap
+  //   carousel.scrollBy({
+  //     left: direction * movieWidth * 2, // puedes cambiar el 2 por cuántas películas desplazar por click
+  //     behavior: "smooth"
+  //   });
+  // }
+  
+  if (carousel) {
+    const scrollAmount = carousel.clientWidth;
+  
+    carousel.scrollBy ( {
+      left: direction * scrollAmount,
+      behavior: "smooth",
+    });
+  }
+}
+  
+// ---------------------END-MIGUEL--------------------
