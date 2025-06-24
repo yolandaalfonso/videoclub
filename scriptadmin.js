@@ -1,5 +1,4 @@
 // Lista JSON simulada
-
 let peliculas = [];
 
 document.getElementById('adminBtn').addEventListener('click', () => {
@@ -30,10 +29,10 @@ document.getElementById('agregarBtn').addEventListener('click', () => {
     disponible
   };
 
-  libros.push(nuevaPelicula);
+  peliculas.push(nuevaPelicula);
 
   console.log("Película agregada:", nuevaPelicula);
-  console.log("Lista actualizada:", libros);
+  console.log("Lista actualizada:", peliculas);
 
   alert("Película agregada con éxito");
   document.getElementById('modal').style.display = 'none';
