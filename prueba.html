@@ -14,10 +14,15 @@
   <form id="formulario">
     <input type="text" id="titulo" placeholder="Título" required />
     <input type="text" id="genero" placeholder="Género" required />
-    <input type="text" id="decada" placeholder="Década" required />
+    <input type="text" id="anno" placeholder="Año" required />
     <input type="number" id="duracion" placeholder="Duración (min)" required />
-    <input type="text" id="portada" placeholder="URL de la portada" required />
+    <!--<input type="text" id="portada" placeholder="URL de la portada" width="40px" height="auto" />-->
     <label>
+
+        <!--Input img para poder subir un archivo de imagen-->
+        <input type="file" id="portada" accept="image/jpeg,image/png,image/jpg" />
+        <img id="preview" class="hidden" alt="Preview" style="max-width: 200px;" />
+
         Disponible:
         <input type="checkbox" id="disponibilidad" checked />
       </label>
