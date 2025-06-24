@@ -15,6 +15,7 @@
   <body>
     <div class="main-page">
       <header>
+        <img class="logo-img" src="../source/Logo Videoclub.png" alt="logo">
         <video
           class="video-bg"
           src="../source/main.mp4"
@@ -25,7 +26,9 @@
         ></video>
       </header>
       <nav>
-        <div class="nav-btn"><span class="nav-text">Home</span></div>
+        <a href="#"
+          ><div class="nav-btn"><span class="nav-text">Home</span></div></a
+        >
         <div class="nav-btn"><span class="nav-text">Catalogo</span></div>
         <div id="open-modal-btn" class="nav-btn">
           <span class="nav-text">Alquila tu sala</span>
@@ -66,41 +69,263 @@
       </div>
       <div class="carrousel-section">
         <!-- MIGUEL -->
+        <div class="contenedor" id="header">
 
-        <div id="carrousell-1" class="carrousell">
-          <img
-            style="left: -5px; transform: rotate(180deg)"
-            class="carrousell-arrow"
-            src="../source/arrow.svg"
-            alt="arrow"
-          />
-          <img
-            style="right: -5px"
-            class="carrousell-arrow"
-            src="../source/arrow.svg"
-            alt="arrow"
-          />
-          <span class="carrousell-categoria">ESTRENOS</span>
-          <div class="carrousell-items">
-            <div class="carrousell-item">
-              <img src="../source/poster.jpeg" alt="poster" />
-              <span class="carrousell-movie-title">Nombre pelicula</span>
+        <h2 class="titulo">ESTRENOS</h2>
+        <div class="carousel-container">
+          <button class="arrow left" onclick="scrollCarousel(-1)">
+            &#10094;
+          </button>
+
+          <div class="carousel" id="carousel">
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/vAlIRnwdp17A6HsOcEoqZJk0ZqJ.jpg"
+                alt="Pelicula Ballerina"
+              />
+              <p>Ballerina</p>
             </div>
-            <div class="carrousell-item">
-              <img src="../source/poster.jpeg" alt="poster" />
-              <span class="carrousell-movie-title">Nombre pelicula</span>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/sGFO6VshDEQ9vX4tOSobLJpkNhq.jpg"
+                alt="Pelicula entrenar a tu dragón"
+              />
+              <p>Cómo Entrenar a tu Dragón</p>
             </div>
-            <div class="carrousell-item">
-              <img src="../source/poster.jpeg" alt="poster" />
-              <span class="carrousell-movie-title">Nombre pelicula</span>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg"
+                alt="Pelicula Lilo & Stitch"
+              />
+              <p>Lilo & Stitch</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frNkbclQpexf3aUzZrnixF3t5Hw.jpg"
+                alt="pelicula destino final"
+              />
+              <p>Destino Final: Lazos de Sangre</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvIqaDUC48dwfd7taKczB7909Qg.jpg"
+                alt="pelicula 28 años después"
+              />
+              <p>28 Años Después</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/kJiTA2CBGEr3He3kSt2lLTvTuEB.jpg"
+                alt="pelicula ne zha 2"
+              />
+              <p>Ne Zha 2</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rovpt08A266rqRWRzxDlEhJ5Uo.jpg"
+                alt="pelicula f1"
+              />
+              <p>F1</p>
+            </div>
+            <div class="movie">
+              <img
+                src="./img/portada no disponible.jpg"
+                alt="pelicula independiente"
+              />
+              <p>Película Independiente</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/haOjJGUV00dKlZaJWgjM1UD1cJV.jpg"
+                alt="pelicula misión imposible"
+              />
+              <p>Misión Imposible: Sentencia Final</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5eMnZjgvSGafnbjTikiA3iIqT3Y.jpg"
+                alt="pelicula something beautiful"
+              />
+              <p>Miley Cyrus: Something Beautiful</p>
             </div>
           </div>
+
+          <button class="arrow right" onclick="scrollCarousel(1)">
+            &#10095;
+          </button>
         </div>
-        <div id="carrousell-2" class="carrousell"></div>
-        <div id="carrousell-3" class="carrousell"></div>
-        <a href="" class="btn-more-films"
-          ><!--<button>Más películas</button>--></a
-        >
+      </div>
+      <div class="contenedor" id="header">
+
+        <h2 class="titulo">POPULARES</h2>
+        <div class="carousel-container">
+          <button class="arrow left" onclick="scrollCarousel(-1)">
+            &#10094;
+          </button>
+
+          <div class="carousel" id="carousel">
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/vAlIRnwdp17A6HsOcEoqZJk0ZqJ.jpg"
+                alt="Pelicula Ballerina"
+              />
+              <p>Ballerina</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/sGFO6VshDEQ9vX4tOSobLJpkNhq.jpg"
+                alt="Pelicula entrenar a tu dragón"
+              />
+              <p>Cómo Entrenar a tu Dragón</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg"
+                alt="Pelicula Lilo & Stitch"
+              />
+              <p>Lilo & Stitch</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frNkbclQpexf3aUzZrnixF3t5Hw.jpg"
+                alt="pelicula destino final"
+              />
+              <p>Destino Final: Lazos de Sangre</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvIqaDUC48dwfd7taKczB7909Qg.jpg"
+                alt="pelicula 28 años después"
+              />
+              <p>28 Años Después</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/kJiTA2CBGEr3He3kSt2lLTvTuEB.jpg"
+                alt="pelicula ne zha 2"
+              />
+              <p>Ne Zha 2</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rovpt08A266rqRWRzxDlEhJ5Uo.jpg"
+                alt="pelicula f1"
+              />
+              <p>F1</p>
+            </div>
+            <div class="movie">
+              <img
+                src="./img/portada no disponible.jpg"
+                alt="pelicula independiente"
+              />
+              <p>Película Independiente</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/haOjJGUV00dKlZaJWgjM1UD1cJV.jpg"
+                alt="pelicula misión imposible"
+              />
+              <p>Misión Imposible: Sentencia Final</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5eMnZjgvSGafnbjTikiA3iIqT3Y.jpg"
+                alt="pelicula something beautiful"
+              />
+              <p>Miley Cyrus: Something Beautiful</p>
+            </div>
+          </div>
+
+          <button class="arrow right" onclick="scrollCarousel(1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+      <div class="contenedor" id="header">
+
+        <h2 class="titulo">COMEDIA</h2>
+        <div class="carousel-container">
+          <button class="arrow left" onclick="scrollCarousel(-1)">
+            &#10094;
+          </button>
+
+          <div class="carousel" id="carousel">
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/vAlIRnwdp17A6HsOcEoqZJk0ZqJ.jpg"
+                alt="Pelicula Ballerina"
+              />
+              <p>Ballerina</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/sGFO6VshDEQ9vX4tOSobLJpkNhq.jpg"
+                alt="Pelicula entrenar a tu dragón"
+              />
+              <p>Cómo Entrenar a tu Dragón</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg"
+                alt="Pelicula Lilo & Stitch"
+              />
+              <p>Lilo & Stitch</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frNkbclQpexf3aUzZrnixF3t5Hw.jpg"
+                alt="pelicula destino final"
+              />
+              <p>Destino Final: Lazos de Sangre</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvIqaDUC48dwfd7taKczB7909Qg.jpg"
+                alt="pelicula 28 años después"
+              />
+              <p>28 Años Después</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/kJiTA2CBGEr3He3kSt2lLTvTuEB.jpg"
+                alt="pelicula ne zha 2"
+              />
+              <p>Ne Zha 2</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rovpt08A266rqRWRzxDlEhJ5Uo.jpg"
+                alt="pelicula f1"
+              />
+              <p>F1</p>
+            </div>
+            <div class="movie">
+              <img
+                src="./img/portada no disponible.jpg"
+                alt="pelicula independiente"
+              />
+              <p>Película Independiente</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/haOjJGUV00dKlZaJWgjM1UD1cJV.jpg"
+                alt="pelicula misión imposible"
+              />
+              <p>Misión Imposible: Sentencia Final</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5eMnZjgvSGafnbjTikiA3iIqT3Y.jpg"
+                alt="pelicula something beautiful"
+              />
+              <p>Miley Cyrus: Something Beautiful</p>
+            </div>
+          </div>
+
+          <button class="arrow right" onclick="scrollCarousel(1)">
+            &#10095;
+          </button>
+        </div>
       </div>
       <div class="location-contact-section">
         <div class="gradient-text">
@@ -167,7 +392,7 @@
           </div>
         </div>
       </div>
-    </div>
+    
     <footer>
       <div class="footer-case">
         <div class="footer">
