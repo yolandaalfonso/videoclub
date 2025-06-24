@@ -27,8 +27,12 @@
       <nav>
         <div class="nav-btn"><span class="nav-text">Home</span></div>
         <div class="nav-btn"><span class="nav-text">Catalogo</span></div>
-        <div class="nav-btn"><span class="nav-text">Alquila tu sala</span></div>
-        <div class="nav-btn"><span class="nav-text">Contacto</span></div>
+        <div id="open-modal-btn" class="nav-btn">
+          <span class="nav-text">Alquila tu sala</span>
+        </div>
+        <a href="#contact-scroll-page"
+          ><div class="nav-btn"><span class="nav-text">Contacto</span></div></a
+        >
       </nav>
       <div class="advantages">
         <span class="advantages-up"
@@ -61,6 +65,8 @@
         </div>
       </div>
       <div class="carrousel-section">
+        <!-- MIGUEL -->
+
         <div id="carrousell-1" class="carrousell">
           <img
             style="left: -5px; transform: rotate(180deg)"
@@ -97,15 +103,145 @@
         >
       </div>
       <div class="location-contact-section">
-        <div class="gradient-text"></div>
-        <div class="location-foto">
-          <div class="location"></div>
-          <div class="front-foto"></div>
+        <div class="gradient-text">
+          <span>Cuando quieras encontrarnos</span>
         </div>
-        <div class="bg-video"></div>
-        <div class="contact"></div>
+        <div class="location-foto">
+          <div class="location-foto-card">
+            <div class="location-foto-img">
+              <img src="../source/map.png" alt="map" />
+            </div>
+            <span class="location-foto-text">Estamos aquí</span>
+          </div>
+          <div class="location-foto-card">
+            <div class="location-foto-img">
+              <img src="../source/frontside.png" alt="frontside" />
+            </div>
+            <span class="location-foto-text">Nos vemos así</span>
+          </div>
+        </div>
+        <div class="bg-video">
+          <video
+            class="video-bg-second"
+            src="../source/second.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+        </div>
+        <div id="contact-scroll-page" class="contact">
+          <!-- MARISOL -->
+          <div class="contact-section">
+            <div class="info-side">
+              <div class="info-box">
+                <h2>¿Quieres contactar con nosotros?</h2>
+              </div>
+            </div>
+
+            <div class="form-side">
+              <form id="Contactanos">
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                />
+                <input
+                  type="text"
+                  id="contacto"
+                  name="contacto"
+                  placeholder="Tu número de teléfono o email"
+                />
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="5"
+                  placeholder="Tu mensaje"
+                ></textarea>
+                <button type="submit">ENVIAR MENSAJE</button>
+              </form>
+
+              <p class="phone-info">O llama por teléfono: +34 984 29 34 96</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <footer></footer>
+    </div>
+    <footer>
+      <div class="footer-case">
+        <div class="footer">
+          <h4>Videoclub</h4>
+          <p><a href="/politica-de-privacidad">Política de Privacidad</a></p>
+          <p><a href="/contacto">Contacto</a></p>
+        </div>
+        <div class="footer">
+          <h4>Cine</h4>
+          <p><a href="/politica-de-privacidad">Reserva</a></p>
+          <p><a href="/contacto">Cartelera</a></p>
+        </div>
+        <div class="footer">
+          <h4>Nosotros</h4>
+          <p><a href="/politica-de-privacidad">Conócenos</a></p>
+          <p><a href="/contacto">Empleo</a></p>
+        </div>
+        <div class="footer">
+          <h4>Contacto</h4>
+          <p><a href="/politica-de-privacidad">Contacto</a></p>
+          <p><a href="/contacto">Preguntas frecuentas</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="modal-booking">
+      <div class="modal-content">
+        <button class="close-modal-btn">&times;</button>
+        <div class="contact-section">
+          <div class="info-side">
+            <div class="info-box">
+              <h2>Reserva tu sala privada</h2>
+            </div>
+          </div>
+
+          <div class="form-side">
+            <form id="BookingForm">
+              <input
+                type="text"
+                id="bokkingName"
+                name="nombre"
+                placeholder="Tu nombre y apellido"
+                required
+              />
+              <input
+                type="text"
+                id="BookingContact"
+                name="contacto"
+                placeholder="Tu número de teléfono o email"
+                required
+              />
+              <input type="date" id="bookingDate" name="date" required />
+              <input
+                type="number"
+                id="BookingPeople"
+                name="personas"
+                placeholder="Nº de personas"
+                min="3"
+                required
+              />
+              <textarea
+                id="bookingMessage"
+                name="message"
+                rows="4"
+                placeholder="¿Alguna petición especial? (ej: película, catering...)"
+              ></textarea>
+              <button type="submit">SOLICITAR RESERVA</button>
+            </form>
+            <p class="phone-info">
+              O llama para confirmar disponibilidad si lo prefieres
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="main.js"></script>
