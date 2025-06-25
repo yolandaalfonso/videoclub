@@ -197,6 +197,10 @@ main {
   border-radius: 5px;
 }
 
+#selector-decada {
+  margin-top: 25px;
+}
+
 /* Estilos responsivos */
 @media (max-width: 1024px) {
   #movie {

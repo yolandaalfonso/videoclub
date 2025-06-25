@@ -129,6 +129,9 @@ async function filtrarPeliculas() {
             case 'drama':
                 generosSeleccionados.push('drama');
                 break;
+            case 'fantasia':
+                generosSeleccionados.push('fantasía');
+                break;
             case 'romantica':
                 generosSeleccionados.push('romántica');
                 break;

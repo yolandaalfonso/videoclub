@@ -176,54 +176,68 @@
       ],
       "anno": "1982",
       "duracion": "129",
-      "portada": "img/covers/conanelbarbaro.jpg",
+      "portada": "img/covers/conanelbarbaro.jpeg",
       "disponible": true
     },
     {
-      "id": "viernes13_1980",
-      "titulo": "Viernes 13",
-      "genero": [
-        "terror"
-      ],
-      "anno": "1980",
-      "duracion": "95",
-      "portada": "img/covers/viernes13_1980.jpg",
-      "disponible": true
-    },
-    {
-      "id": "lacomunidaddelanillo",
+      "id": "elseñordelosanillos1",
       "titulo": "El Señor de los Anillos: La Comunidad del Anillo",
       "genero": [
-        "fantasía",
         "aventura",
+        "fantasía",
         "drama"
       ],
       "anno": "2001",
-      "duracion": "178",
-      "portada": "img/covers/lacomunidaddelanillo.jpg",
+      "duracion": "208",
+      "portada": "img/covers/elseñordelosanillos1.jpg",
+      "disponible": true
+    },
+    {
+      "id": "elseñordelosanillos2",
+      "titulo": "El Señor de los Anillos: Las Dos Torres",
+      "genero": [
+        "aventura",
+        "fantasía",
+        "drama"
+      ],
+      "anno": "2002",
+      "duracion": "223",
+      "portada": "img/covers/elseñordelosanillos2.jpg",
+      "disponible": true
+    },
+    {
+      "id": "elseñordelosanillos3",
+      "titulo": "El Señor de los Anillos: El Retorno del Rey",
+      "genero": [
+        "aventura",
+        "fantasía",
+        "drama"
+      ],
+      "anno": "2003",
+      "duracion": "251",
+      "portada": "img/covers/elseñordelosanillos3.png",
       "disponible": true
     },
     {
       "id": "lamatanzadetexas1974",
       "titulo": "La Matanza de Texas",
       "genero": [
-        "terror",
-        "slasher"
+        "terror"
       ],
       "anno": "1974",
       "duracion": "83",
-      "portada": "img/covers/lamatanzadetexas1974.jpg",
+      "portada": "img/covers/lamatanzadetexas1974.webp",
       "disponible": false
     },
     {
-      "id": "ritossatanicosdracula",
+      "id": "losritossatanicosdedracula",
       "titulo": "Los Ritos Satánicos de Drácula",
       "genero": [
         "terror"
       ],
       "anno": "1973",
       "duracion": "88",
-      "portada": "img/covers/ritossatanicosdracula.jpg",
+      "portada": "img/covers/losritossatanicosdedracula.webp",
       "disponible": true
     }
   ]
