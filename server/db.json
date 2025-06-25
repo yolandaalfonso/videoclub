@@ -1,26 +1,244 @@
 {
-    "peliculas": [
-        {
-            "id": "armaletal",
-            "titulo": "Arma letal",
-            "genero": [
-                "comedia",
-                "accion"
-            ],
-            "decada": "80",
-            "duracion": "109",
-            "portada": "img/armaletal.png",
-            "disponible": true
-        },
-
-        {
-            "id": "lacosa",
-            "titulo": "La cosa",
-            "genero": "terror",
-            "decada": "80",
-            "duracion": "109",
-            "portada": "img/lacosa.png",
-            "disponible": true
-        }
-    ]
+  "peliculas": [
+    {
+      "id": "armaletal",
+      "titulo": "Arma letal",
+      "genero": [
+        "acción",
+        "comedia"
+      ],
+      "anno": "1987",
+      "duracion": "109",
+      "portada": "img/covers/armaletal.jpg",
+      "disponible": true
+    },
+    {
+      "id": "terminator2",
+      "titulo": "Terminator 2",
+      "genero": [
+        "acción",
+        "ciencia ficción"
+      ],
+      "anno": "1991",
+      "duracion": "135",
+      "portada": "img/covers/terminator2.jpg",
+      "disponible": false
+    },
+    {
+      "id": "persiguiendoaamy",
+      "titulo": "Persiguiendo a Amy",
+      "genero": [
+        "comedia",
+        "romántica"
+      ],
+      "anno": "1997",
+      "duracion": "113",
+      "portada": "img/covers/persiguiendoaamy.jpg",
+      "disponible": true
+    },
+    {
+      "id": "lacosa",
+      "titulo": "La cosa",
+      "genero": [
+        "ciencia ficción",
+        "terror"
+      ],
+      "anno": "1982",
+      "duracion": "109",
+      "portada": "img/covers/lacosa.webp",
+      "disponible": false
+    },
+    {
+      "id": "eldiariodenoah",
+      "titulo": "El diario de Noa",
+      "genero": [
+        "drama",
+        "romántica"
+      ],
+      "anno": "2004",
+      "duracion": "124",
+      "portada": "img/covers/eldiariodenoa.jpg",
+      "disponible": true
+    },
+    {
+      "id": "nosferatu1922",
+      "titulo": "Nosferatu",
+      "genero": [
+        "terror"
+      ],
+      "anno": "1922",
+      "duracion": "91",
+      "portada": "img/covers/nosferatu1922.jpg",
+      "disponible": true
+    },
+    {
+      "id": "nosferatu2024",
+      "titulo": "Nosferatu",
+      "genero": [
+        "terror"
+      ],
+      "anno": "2024",
+      "duracion": "132",
+      "portada": "img/covers/nosferatu2024.jpg",
+      "disponible": true
+    },
+    {
+      "id": "interestelar",
+      "titulo": "Interestelar",
+      "genero": [
+        "ciencia ficción",
+        "drama"
+      ],
+      "anno": "2014",
+      "duracion": "169",
+      "portada": "img/covers/interestelar.jpg",
+      "disponible": true
+    },
+    {
+      "id": "elgranlebowski",
+      "titulo": "El gran Lebowski",
+      "genero": [
+        "comedia",
+        "crimen"
+      ],
+      "anno": "1998",
+      "duracion": "117",
+      "portada": "img/covers/elgranlebowski.jpg",
+      "disponible": false
+    },
+    {
+      "id": "matrix",
+      "titulo": "Matrix",
+      "genero": [
+        "ciencia ficción",
+        "acción"
+      ],
+      "anno": "1999",
+      "duracion": "136",
+      "portada": "img/covers/matrix.jpg",
+      "disponible": true
+    },
+    {
+      "id": "casablanca",
+      "titulo": "Casablanca",
+      "genero": [
+        "drama",
+        "romántica"
+      ],
+      "anno": "1942",
+      "duracion": "102",
+      "portada": "img/covers/casablanca.jpg",
+      "disponible": true
+    },
+    {
+      "id": "arcaperdida",
+      "titulo": "En busca del arca perdida",
+      "genero": [
+        "aventura",
+        "acción"
+      ],
+      "anno": "1981",
+      "duracion": "115",
+      "portada": "img/covers/arcaperdida.jpg",
+      "disponible": true
+    },
+    {
+      "id": "amelie",
+      "titulo": "Amélie",
+      "genero": [
+        "comedia",
+        "romántica"
+      ],
+      "anno": "2001",
+      "duracion": "122",
+      "portada": "img/covers/amelie.jpg",
+      "disponible": true
+    },
+    {
+      "id": "pulpfiction",
+      "titulo": "Pulp Fiction",
+      "genero": [
+        "crimen",
+        "drama"
+      ],
+      "anno": "1994",
+      "duracion": "154",
+      "portada": "img/covers/pulpfiction.jpg",
+      "disponible": true
+    },
+    {
+      "id": "conanelbarbaro",
+      "titulo": "Conan el bárbaro",
+      "genero": [
+        "acción",
+        "aventura",
+        "fantasía"
+      ],
+      "anno": "1982",
+      "duracion": "129",
+      "portada": "img/covers/conanelbarbaro.jpeg",
+      "disponible": true
+    },
+    {
+      "id": "elseñordelosanillos1",
+      "titulo": "El Señor de los Anillos: La comunidad del anillo",
+      "genero": [
+        "aventura",
+        "fantasía",
+        "drama"
+      ],
+      "anno": "2001",
+      "duracion": "208",
+      "portada": "img/covers/elseñordelosanillos1.jpg",
+      "disponible": true
+    },
+    {
+      "id": "elseñordelosanillos2",
+      "titulo": "El Señor de los Anillos: Las dos torres",
+      "genero": [
+        "aventura",
+        "fantasía",
+        "drama"
+      ],
+      "anno": "2002",
+      "duracion": "223",
+      "portada": "img/covers/elseñordelosanillos2.jpg",
+      "disponible": true
+    },
+    {
+      "id": "elseñordelosanillos3",
+      "titulo": "El Señor de los Anillos: El retorno del rey",
+      "genero": [
+        "aventura",
+        "fantasía",
+        "drama"
+      ],
+      "anno": "2003",
+      "duracion": "251",
+      "portada": "img/covers/elseñordelosanillos3.png",
+      "disponible": true
+    },
+    {
+      "id": "lamatanzadetexas1974",
+      "titulo": "La matanza de Texas",
+      "genero": [
+        "terror"
+      ],
+      "anno": "1974",
+      "duracion": "83",
+      "portada": "img/covers/lamatanzadetexas1974.webp",
+      "disponible": false
+    },
+    {
+      "id": "losritossatanicosdedracula",
+      "titulo": "Los ritos satánicos de Drácula",
+      "genero": [
+        "terror"
+      ],
+      "anno": "1973",
+      "duracion": "88",
+      "portada": "img/covers/losritossatanicosdedracula.webp",
+      "disponible": true
+    }
+  ]
 }

@@ -1,0 +1,257 @@
+/* Estilos generales */
+body {
+  font-family: "Inria Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0D0D1A;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Header - ahora contiene una imagen y un título */
+#header {
+  width: 100%;
+  background-color: #0D0D1A; /* Fondo negro para el header */
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna (imagen arriba, título abajo) */
+  align-items: center; /* Centra horizontalmente la imagen y el título */
+  justify-content: center; /* Centra verticalmente si hay espacio */
+  min-height: 80px; /* Altura mínima del header */
+}
+
+#header img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+
+#header a {
+  height: auto; 
+  display: block;
+  max-width: 30%;
+  margin-bottom: 0px;
+}
+
+#catalogo-title {
+  color: #FF3CAC;
+  font-size: 4rem; /* Tamaño de fuente más grande */
+  font-weight: bold;
+  margin-top: 0px;
+  text-shadow: 0 0 25px #FF3CAC; /* Efecto neón */
+}
+
+
+/* Contenedor principal */
+main {
+  margin-left: 220px;
+  padding: 20px 0;
+  margin-right: 20px;
+}
+
+/* Contenedor de películas */
+#movie {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  min-width: 0;
+}
+
+/* Ficha de película */
+.ficha {
+  background-color: #121224;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ficha:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.ficha h2 {
+  color: #FF3CAC;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.ficha p {
+  margin: 8px 0;
+}
+
+/* Portada de la película */
+.portada {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: 1px solid #9D4EDD;
+  object-fit: cover;
+  display: block;
+}
+
+/* Botones */
+.reservar, .devolver {
+  background-color: #6CB8FF;
+  color: #0D0D1A;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.reservar:hover, .devolver:hover {
+  background-color: #4CA0FF;
+}
+
+/* Menú de búsqueda */
+#menu-busqueda {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #121224;
+  color: white;
+  border-right: 1px solid #9D4EDD;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#menu-busqueda input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #0D0D1A;
+  border: 1px solid #6CB8FF;
+  color: white;
+  border-radius: 5px;
+}
+
+#menu-busqueda button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6CB8FF;
+  color: #0D0D1A;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#menu-busqueda button:hover {
+  background-color: #4CA0FF;
+}
+
+/* Checkboxes personalizados */
+#menu-busqueda input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #6CB8FF;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 8px;
+}
+
+#menu-busqueda input[type="checkbox"]:checked {
+  background-color: #6CB8FF;
+}
+
+#menu-busqueda input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: #9D4EDD;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Select personalizado */
+#menu-busqueda select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #0D0D1A;
+  border: 1px solid #6CB8FF;
+  color: white;
+  border-radius: 5px;
+}
+
+#selector-decada {
+  margin-top: 25px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  #movie {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-busqueda {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #9D4EDD;
+    padding: 10px 20px;
+  }
+
+  main {
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  #movie {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .ficha {
+    width: 100%;
+    max-width: none;
+    padding: 10px;
+  }
+
+  .portada {
+    max-width: 150px;
+  }
+
+  .reservar, .devolver {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ficha h2 {
+    font-size: 1rem;
+  }
+}

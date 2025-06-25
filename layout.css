@@ -1,3 +1,34 @@
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.menu {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.menu a{
+    padding: 12px 20px;
+    border: 2px solid #FF3CAC;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: white;
+    transform: translateY(-2px);
+  }
+
+
+
 footer {
     display: flex; /* Coloca los hijos en fila */
     justify-content: space-between; /* Espacio entre ellos */

@@ -1,4 +1,5 @@
 function crearLayout() {
+  
     const footer = document.getElementById('footer');
 
     footer.innerHTML = `
@@ -26,5 +27,4 @@ function crearLayout() {
 }
 
 
-// Al iniciar la página:
 crearLayout();
