@@ -11,7 +11,7 @@ body {
 /* Header - ahora contiene una imagen y un título */
 #header {
   width: 100%;
-  background-color: black; /* Fondo negro para el header */
+  background-color: #0D0D1A; /* Fondo negro para el header */
   padding: 10px 20px;
   display: flex;
   flex-direction: column; /* Coloca los elementos en columna (imagen arriba, título abajo) */

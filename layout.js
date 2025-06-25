@@ -1,21 +1,6 @@
 function crearLayout() {
-    const header = document.getElementById('header');
+  
     const footer = document.getElementById('footer');
-
-    header.innerHTML = `
-    <div class="img-header">
-        <img src="img/Header.png" alt="logo Videoclub" width="1420">
-      </div>
-        <nav>
-          <!--<button class="button-toggle">☰</button>-->
-          <div class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="">Catálogo</a>
-            <a href="">Alquila tu sala</a>
-            <a href="">Contacto</a>
-          </div>
-        </nav>
-    `;
 
     footer.innerHTML = `
             <div class="footer">
