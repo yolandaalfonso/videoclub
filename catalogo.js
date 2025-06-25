@@ -45,7 +45,11 @@ async function loadMovies(pelis = null) {
             <p><strong>Año: </strong>${peli.anno}</p>
             <p><strong>Género: </strong>${peli.genero.join(", ")}</p>
             <p><strong>Duración: </strong>${peli.duracion} min</p>
-            <img src="${peli.portada}" alt="Portada de ${peli.titulo}" class="portada" width="300px">
+            <img src="${peli.portada}" 
+             onerror="this.src='img/covers/portada_no_disponible.jpg'" 
+             alt="Portada de ${peli.titulo}" 
+             class="portada" 
+             width="300px">
             ${peli.disponible
                 ? `<button class="reservar" data-id="${peli.id}">Reservar</button>`
                 : `<button class="devolver" data-id="${peli.id}">Devolver</button>`}

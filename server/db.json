@@ -84,7 +84,7 @@
     },
     {
       "id": "interestelar",
-      "titulo": "Interstellar",
+      "titulo": "Interestelar",
       "genero": [
         "ciencia ficción",
         "drama"
@@ -96,7 +96,7 @@
     },
     {
       "id": "elgranlebowski",
-      "titulo": "El Gran Lebowski",
+      "titulo": "El gran Lebowski",
       "genero": [
         "comedia",
         "crimen"
@@ -132,7 +132,7 @@
     },
     {
       "id": "arcaperdida",
-      "titulo": "En Busca del Arca Perdida",
+      "titulo": "En busca del arca perdida",
       "genero": [
         "aventura",
         "acción"
@@ -168,7 +168,7 @@
     },
     {
       "id": "conanelbarbaro",
-      "titulo": "Conan el Bárbaro",
+      "titulo": "Conan el bárbaro",
       "genero": [
         "acción",
         "aventura",
@@ -181,7 +181,7 @@
     },
     {
       "id": "elseñordelosanillos1",
-      "titulo": "El Señor de los Anillos: La Comunidad del Anillo",
+      "titulo": "El Señor de los Anillos: La comunidad del anillo",
       "genero": [
         "aventura",
         "fantasía",
@@ -194,7 +194,7 @@
     },
     {
       "id": "elseñordelosanillos2",
-      "titulo": "El Señor de los Anillos: Las Dos Torres",
+      "titulo": "El Señor de los Anillos: Las dos torres",
       "genero": [
         "aventura",
         "fantasía",
@@ -207,7 +207,7 @@
     },
     {
       "id": "elseñordelosanillos3",
-      "titulo": "El Señor de los Anillos: El Retorno del Rey",
+      "titulo": "El Señor de los Anillos: El retorno del rey",
       "genero": [
         "aventura",
         "fantasía",
@@ -220,7 +220,7 @@
     },
     {
       "id": "lamatanzadetexas1974",
-      "titulo": "La Matanza de Texas",
+      "titulo": "La matanza de Texas",
       "genero": [
         "terror"
       ],
@@ -231,7 +231,7 @@
     },
     {
       "id": "losritossatanicosdedracula",
-      "titulo": "Los Ritos Satánicos de Drácula",
+      "titulo": "Los ritos satánicos de Drácula",
       "genero": [
         "terror"
       ],

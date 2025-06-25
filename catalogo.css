@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inria Sans", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #0D0D1A;
@@ -21,8 +21,14 @@ body {
 }
 
 #header img {
-  max-width: 100%; /* Asegura que la imagen no se desborde */
-  height: auto; /* Mantiene la proporción */
+  height: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+
+#header a {
+  height: auto; 
   display: block;
   max-width: 30%;
   margin-bottom: 0px;
@@ -30,10 +36,10 @@ body {
 
 #catalogo-title {
   color: #FF3CAC;
-  font-size: 3rem; /* Tamaño de fuente más grande */
+  font-size: 4rem; /* Tamaño de fuente más grande */
   font-weight: bold;
   margin-top: 0px;
-  text-shadow: 0 0 5px #FF3CAC, 0 0 10px #FF3CAC, 0 0 15px #FF3CAC; /* Efecto neón */
+  text-shadow: 0 0 25px #FF3CAC; /* Efecto neón */
 }
 
 
@@ -41,6 +47,7 @@ body {
 main {
   margin-left: 220px;
   padding: 20px 0;
+  margin-right: 20px;
 }
 
 /* Contenedor de películas */
@@ -219,7 +226,7 @@ main {
   }
 
   main {
-    margin-left: 0;
+    margin-left: 20px;
     padding: 10px;
   }
 
