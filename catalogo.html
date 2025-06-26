@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Videoclub 85</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="catalogo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="main-content-wrapper">
+    <header id="header">
+      <a id="tigre" href="index.html"><img src="img/tigerheader.png" alt="Logotipo de Videoclub 85"></a>
+      <h1 id="catalogo-title">Catálogo</h1>
+      <a href="admin.html" id="admin-button">🔑 Admin</a>
+    </header>
+    <aside id="menu-busqueda">
+      <h2>Menú de Búsqueda</h2>
+      <input type="text" placeholder="Buscar...">
+      <button id="search-button">Buscar</button>
+      <h3>Géneros</h3>
+      <input type="checkbox" id="accion">Acción<br>
+      <input type="checkbox" id="aventura">Aventura<br>
+      <input type="checkbox" id="comedia">Comedia<br>
+      <input type="checkbox" id="cifi">Ciencia ficción<br>
+      <input type="checkbox" id="crimen">Crimen<br>
+      <input type="checkbox" id="drama">Drama<br>
+      <input type="checkbox" id="fantasia">Fantasía<br>
+      <input type="checkbox" id="romantica">Romántica<br>
+      <input type="checkbox" id="terror">Terror<br>
+
+      <div id="selector-decada">
+        <label for="decada">Década: </label>
+        <select name="decada" id="decada">
+          <option value="todas">Todas</option>
+          <option value="1920">1920</option>
+          <option value="1930">1930</option>
+          <option value="1940">1940</option>
+          <option value="1950">1950</option>
+          <option value="1960">1960</option>
+          <option value="1970">1970</option>
+          <option value="1980">1980</option>
+          <option value="1990">1990</option>
+          <option value="2000">2000</option>
+          <option value="2010">2010</option>
+          <option value="2020">2020</option>
+        </select>
+      </div>
+    </aside>
+
+    <main id="movie">
+      <p>Servidor no encontrado</p>
+    </main>
+  </div>
+
+  <footer id="footer" style="margin-top: 90px;">
+    <p>&copy; 2025 Videoclub 85</p>
+  </footer>
+
+  <script src="layout.js"></script>
+  <script src="catalogo.js"></script>
+</body>
+
+</html>

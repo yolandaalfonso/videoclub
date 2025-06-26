@@ -1,0 +1,623 @@
+*{
+    font-family: "Inria Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+body{
+    
+    
+    background-color: #0D0D1A;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+
+h1{
+    margin: 0;
+}
+
+.main-page{
+    
+    background-color: #ffffff00;
+    width:100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+/* ------------------------------MAIN-VIDEO---------------- */
+header{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100%;
+
+    
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        
+        
+        
+}
+.logo-img{
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+}
+.video-bg {
+    
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 25px;
+
+    box-shadow: 0 0 70px rgba(255, 60, 172, 0.7);
+
+
+}
+/* -----------------------------END-MAIN-VIDEO---------------- */
+/* ------------------------NAV--------------------------------- */
+nav{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 3px solid #FF3CAC;
+    background-color: #ffffff00;
+    box-shadow: 0 0 70px rgba(255, 60, 172, 0.7);
+
+    color: #fff;
+    font-size: 1.5em;
+}
+/* -----------------------END-NAV--------------------------------- */
+/* ------------------------BLUE-BOX------------------------------ */
+.advantages{
+    background-color: #6CB8FF;
+    color: #000000;
+    border-radius:3px ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 30px #6CB8FF;
+    
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    
+    
+}
+.advantages-up{
+    margin-bottom: 20px;
+}
+.advantages-column{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+.advantages-column-item img {
+    width:85px;
+    height: 85px;
+}
+.advantages-column-item h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.advantages-column-item{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    text-align: center;
+    width: 30%;
+
+}
+/* -----------------------END-BLUE-BOX------------------------------ */
+/* ------------------------CARROUSELL---------------------------------- */
+.carrousel-section{
+    width:90%;
+}
+.more-movie-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 70px;
+    text-align: center;
+    border: 3px solid #FF3CAC;
+    box-shadow: 0 0 70px rgba(255, 60, 172, 0.7);
+    color: #fff;
+    font-size: 32px;
+    margin-left: 35%;
+    margin-bottom: 60px;
+}
+/* -----------------------END-CARROUSELL-------------------------------- */
+/* ----------------------LOCATION-------------------------------------- */
+
+.location-contact-section{
+    padding-top: 50px;
+    padding-bottom: 120px;
+    width: 100%;
+    height: auto;
+    
+}
+.gradient-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    width: 90%;
+    height: 120px;
+    background: linear-gradient(84deg, #E747A3, #A9A7DD, #6CB8FF);
+    border: 5px solid;
+    border-image: linear-gradient(-84deg, #E747A3, #A9A7DD, #6CB8FF);
+    border-image-slice: 1 ;
+    color: #fff;
+    font-size: 64px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.location-foto{
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.location-foto-card{
+    display: flex;
+    flex-direction: column;
+    
+    width: 30%;
+    height: auto;
+
+}
+
+.location-foto-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #FF3CAC;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.location-foto-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.location-foto-text{
+    color: #fff;
+    text-shadow: 4px 4px 12px #6CB8FF;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.bg-video{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.video-bg-second{
+    border-radius: 50px;
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 0 70px rgba(255, 60, 172, 0.7);
+}
+/* --------------------------END-LOCATION--------------------------------- */
+
+
+
+
+/* --------------------------------------MARISOL---------------------- */
+
+.contact-section {
+    display: flex;
+    /*para que se pongan en fila junto con info-side y form-side*/
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    /*posicionar parrafo de formulario*/
+}
+
+/* --- Estilo específico para el botón --- */
+.form-side button {
+    background-color: #6cb8ff;
+    /* Fondo azul sólido */
+    color: #0f0c29;
+    /* Texto oscuro para que contraste */
+    font-weight: 600;
+    /* Letra un poco más gruesa */
+    cursor: pointer;
+    /* Muestra una manito al pasar el ratón */
+}
+
+/* --- Estilo para el texto del teléfono --- */
+.phone-info {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: #f0f0f0;
+    text-shadow: 0 0 7px rgba(200, 200, 255, 0.6), 0 0 10px rgba(0, 217, 255, 0.5);
+    font-size: 2.4em;
+    margin-top: 10px;
+    /* Un poco menos de espacio que los otros campos */
+}
+
+.info-side {
+    flex-basis: 40%;
+    /*para que la columana izq. ocupe el 40% de espacio*/
+    padding: 20px;
+}
+
+.form-side {
+    flex-basis: 60%;
+    /*para que la columna derecha ocupe el 60%*/
+    padding: 20px;
+    padding-bottom: 53px;
+}
+
+/* --- Estilo de la caja rosa --- */
+.info-box {
+    border: 3px solid #ff3cac;
+    /* Borde rosa neón */
+    padding: 30px;
+    box-shadow: 0 0 70px #ff3cac;
+    /* Efecto de brillo para el borde rosa */
+    height: 86%;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+
+.info-box h2 {
+    font-size: 56px;
+    line-height: 1.3;
+    font-weight: 500;
+    /* Aumentamos el espacio entre las líneas */
+    margin: 0;
+    /* Esta es la clave para que el texto se rompa: 
+       le decimos que el ancho máximo del texto no puede superar 
+       el de 12 caracteres. Esto lo fuerza a dividirse. */
+    max-width: 12ch;
+    color:#fff
+}
+
+.form-side input,
+.form-side textarea,
+.form-side button {
+    /* --- Arreglo de la maquetación --- */
+    display: block;
+    /* Obliga a que cada elemento sea un bloque (se apilen) */
+    width: 100%;
+    /* Obliga a que ocupen el 100% del ancho de la columna */
+
+    /* ¡Línea súper importante! Evita que el padding y el borde hagan que el 
+       elemento se salga de su contenedor (del 100% del ancho) */
+    box-sizing: border-box;
+
+    /* --- Espaciado y tipografía --- */
+    margin-bottom: 25px;
+    /* Margen inferior para separar los campos */
+    padding: 15px;
+    /* Relleno interno para que el texto no se pegue al borde */
+    font-family: inherit;
+    /* Hereda la fuente 'Poppins' del body */
+    font-size: 1em;
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+
+    /* --- Estilo Neón Azul --- */
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Fondo oscuro semi-transparente */
+    border: 2px solid #6cb8ff;
+    /* Borde azul neón */
+    box-shadow: 0 0 10px #6cb8ff;
+    /* Brillo azul neón */
+    color: #f0f0f0;
+    /* Color del texto que escribe el usuario */
+
+    transition: all 0.3 ease-in-out;
+}
+
+/* --- Efecto hover y focus para los campos de texto --- */
+.form-side input:hover,
+.form-side textarea:hover,
+.form-side input:focus,
+.form-side textarea:focus {
+    border-color: #6cb8ff;
+    /* Hacemos el borde un poco más brillante */
+
+    /* ¡Doble sombra para un brillo mucho más intenso! */
+    box-shadow: 0 0 25px #6cb8ff, 0 0 40px rgba(0, 217, 255, 0.7);
+
+    /* Un sutil efecto de que 'sale' hacia ti */
+    transform: scale(1.02);
+
+    /* Quitamos el borde por defecto que ponen algunos navegadores al hacer focus */
+    outline: none;
+}
+
+/* --- Efecto hover para el botón --- */
+.form-side button:hover {
+    /* Hacemos el fondo y el texto aún más brillantes */
+    background-color: #6cb8ff;
+    color: #0a0a23;
+
+    /* Un brillo muy potente y disruptivo */
+    box-shadow: 0 0 25px #6cb8ff, 0 0 50px #6cb8ff;
+
+    /* Lo hacemos 'saltar' un poquito hacia arriba y crecer */
+    transform: scale(1.03) translateY(-3px);
+}
+
+.form-side button {
+    background-color: #6cb8ff !important;
+    /* Le añadimos !important como último recurso para forzar el estilo */
+    color: #0f0c29 !important;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- Estilo para el texto del teléfono --- */
+.form-side .phone-info {
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+
+/*Contenedor info-calidad*/
+.info-square {
+    background-color: #6cb8ff;
+    color: #0d0d1a;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+.info-square h2 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.columns-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-column {
+    flex: 1;
+}
+
+.info-column img {
+    height: 60px;
+}
+
+.info-column h3 {
+    font-size: 1.0em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #ff3cac;
+}
+
+.info-column p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Pagina Modal Reserva */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(13, 13, 26, 0.99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* El truco para ocultar/mostrar con una transición suave */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+    z-index: 1000;
+    /* Nos aseguramos de que esté por encima de todo */
+}
+
+/*La clase que mostrará el modal (JavaScript) */
+.modal-overlay.modal-visible {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+    /* Quitamos el retraso al mostrarlo */
+}
+
+/*Contenido del modal (la ventana en sí) */
+.modal-content {
+    position: relative;
+    transform: scale(0.9);
+    /* Efecto inicial para que parezca que crece al abrirse */
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Efecto de crecimiento al mostrarse el modal */
+.modal-overlay.modal-visible .modal-content {
+    transform: scale(1);
+}
+
+/*El botón de cerrar (la 'X') */
+.close-modal-btn {
+    position: absolute;
+    top: 40px;
+    /* Lo posicionamos un poco fuera de la ventana */
+    right: -40px;
+    background-color: #ff3cac;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* Lo hacemos redondo */
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff3cac;
+    transition: all 0.2s ease;
+    z-index: 1001;
+    /* Nos aseguramos que esté por encima del contenido del modal */
+}
+
+.close-modal-btn:hover {
+    background-color: white;
+    color: #ff3cac;
+    transform: scale(1.1) rotate(90deg);
+    /* Efecto al pasar el ratón */
+}
+
+/* ---------------------------------MIGUEL----------------- */
+
+.titulo {
+    color: #ff00ff;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 64px;
+    text-shadow: 0 0 12px #ff3caac5;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 40px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+    overflow-x: hidden;
+    ;
+    scroll-behavior: smooth;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+.movie {
+    position: relative;
+    background-color: #1c1c2e;
+    border: 2px solid #8f00ff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    flex-shrink: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 1;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff00ff;
+    z-index: 10;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie p {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #ff00ff;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+.arrow:hover {
+    color: white; }

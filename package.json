@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "node-modules": "^1.0.1"
+  },
+  "name": "videoclub",
+  "version": "1.0.0",
+  "main": "layout.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yolandaalfonso/videoclub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yolandaalfonso/videoclub/issues"
+  },
+  "homepage": "https://github.com/yolandaalfonso/videoclub#readme",
+  "description": ""
+}

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Brush+Script&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-page">
+      <header>
+        <img class="logo-img" src="../source/Logo Videoclub.png" alt="logo">
+        <video
+          class="video-bg"
+          src="../source/main.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+      </header>
+      <nav>
+        <a href="#"
+          ><div class="nav-btn"><span class="nav-text">Home</span></div></a
+        >
+        <div class="nav-btn"><span class="nav-text">Catalogo</span></div>
+        <div id="open-modal-btn" class="nav-btn">
+          <span class="nav-text">Alquila tu sala</span>
+        </div>
+        <a href="#contact-scroll-page"
+          ><div class="nav-btn"><span class="nav-text">Contacto</span></div></a
+        >
+      </nav>
+      <div class="advantages">
+        <span class="advantages-up"
+          ><h1>
+            Llevamos más de 30 años bridando el mejor servicio del cine.
+          </h1></span
+        >
+        <div class="advantages-column">
+          <div class="advantages-column-item">
+            <img src="../source/medal.svg" alt="medal" />
+            <h3>Calidad</h3>
+            <span
+              >Nos avala una calidad inmejorable, todos nuestros productos
+              originales y en perfecto estado.</span
+            >
+          </div>
+          <div class="advantages-column-item">
+            <img src="../source/camera.svg" alt="camera" />
+            <h3>Films</h3>
+            <span
+              >Todos los formatos Dvd - Blu-ray - Blu-ray 4K para disfrutar del
+              mejor cine.</span
+            >
+          </div>
+          <div class="advantages-column-item">
+            <img src="../source/gamepad.svg" alt="Game" />
+            <h3>Game</h3>
+            <span>Juegos de Ps4 - Ps5 - Wii </span>
+          </div>
+        </div>
+      </div>
+      <div class="carrousel-section">
+        <!-- MIGUEL -->
+        <div class="contenedor" id="header">
+
+        <h2 class="titulo">ESTRENOS</h2>
+        <div class="carousel-container">
+          <button class="arrow left" onclick="scrollCarousel(-1)">
+            &#10094;
+          </button>
+
+          <div class="carousel" id="carousel">
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/vAlIRnwdp17A6HsOcEoqZJk0ZqJ.jpg"
+                alt="Pelicula Ballerina"
+              />
+              <p>Ballerina</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/sGFO6VshDEQ9vX4tOSobLJpkNhq.jpg"
+                alt="Pelicula entrenar a tu dragón"
+              />
+              <p>Cómo Entrenar a tu Dragón</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg"
+                alt="Pelicula Lilo & Stitch"
+              />
+              <p>Lilo & Stitch</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frNkbclQpexf3aUzZrnixF3t5Hw.jpg"
+                alt="pelicula destino final"
+              />
+              <p>Destino Final: Lazos de Sangre</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvIqaDUC48dwfd7taKczB7909Qg.jpg"
+                alt="pelicula 28 años después"
+              />
+              <p>28 Años Después</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/kJiTA2CBGEr3He3kSt2lLTvTuEB.jpg"
+                alt="pelicula ne zha 2"
+              />
+              <p>Ne Zha 2</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rovpt08A266rqRWRzxDlEhJ5Uo.jpg"
+                alt="pelicula f1"
+              />
+              <p>F1</p>
+            </div>
+            <div class="movie">
+              <img
+                src="./img/portada no disponible.jpg"
+                alt="pelicula independiente"
+              />
+              <p>Película Independiente</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/haOjJGUV00dKlZaJWgjM1UD1cJV.jpg"
+                alt="pelicula misión imposible"
+              />
+              <p>Misión Imposible: Sentencia Final</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5eMnZjgvSGafnbjTikiA3iIqT3Y.jpg"
+                alt="pelicula something beautiful"
+              />
+              <p>Miley Cyrus: Something Beautiful</p>
+            </div>
+          </div>
+
+          <button class="arrow right" onclick="scrollCarousel(1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+      <div class="contenedor" id="header">
+
+        <h2 class="titulo">POPULARES</h2>
+        <div class="carousel-container">
+          <button class="arrow left" onclick="scrollCarousel(-1)">
+            &#10094;
+          </button>
+
+          <div class="carousel" id="carousel">
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/vAlIRnwdp17A6HsOcEoqZJk0ZqJ.jpg"
+                alt="Pelicula Ballerina"
+              />
+              <p>Ballerina</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/sGFO6VshDEQ9vX4tOSobLJpkNhq.jpg"
+                alt="Pelicula entrenar a tu dragón"
+              />
+              <p>Cómo Entrenar a tu Dragón</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg"
+                alt="Pelicula Lilo & Stitch"
+              />
+              <p>Lilo & Stitch</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frNkbclQpexf3aUzZrnixF3t5Hw.jpg"
+                alt="pelicula destino final"
+              />
+              <p>Destino Final: Lazos de Sangre</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvIqaDUC48dwfd7taKczB7909Qg.jpg"
+                alt="pelicula 28 años después"
+              />
+              <p>28 Años Después</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/kJiTA2CBGEr3He3kSt2lLTvTuEB.jpg"
+                alt="pelicula ne zha 2"
+              />
+              <p>Ne Zha 2</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rovpt08A266rqRWRzxDlEhJ5Uo.jpg"
+                alt="pelicula f1"
+              />
+              <p>F1</p>
+            </div>
+            <div class="movie">
+              <img
+                src="./img/portada no disponible.jpg"
+                alt="pelicula independiente"
+              />
+              <p>Película Independiente</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/haOjJGUV00dKlZaJWgjM1UD1cJV.jpg"
+                alt="pelicula misión imposible"
+              />
+              <p>Misión Imposible: Sentencia Final</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5eMnZjgvSGafnbjTikiA3iIqT3Y.jpg"
+                alt="pelicula something beautiful"
+              />
+              <p>Miley Cyrus: Something Beautiful</p>
+            </div>
+          </div>
+
+          <button class="arrow right" onclick="scrollCarousel(1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+      <div class="contenedor" id="header">
+
+        <h2 class="titulo">COMEDIA</h2>
+        <div class="carousel-container">
+          <button class="arrow left" onclick="scrollCarousel(-1)">
+            &#10094;
+          </button>
+
+          <div class="carousel" id="carousel">
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/vAlIRnwdp17A6HsOcEoqZJk0ZqJ.jpg"
+                alt="Pelicula Ballerina"
+              />
+              <p>Ballerina</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/sGFO6VshDEQ9vX4tOSobLJpkNhq.jpg"
+                alt="Pelicula entrenar a tu dragón"
+              />
+              <p>Cómo Entrenar a tu Dragón</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg"
+                alt="Pelicula Lilo & Stitch"
+              />
+              <p>Lilo & Stitch</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frNkbclQpexf3aUzZrnixF3t5Hw.jpg"
+                alt="pelicula destino final"
+              />
+              <p>Destino Final: Lazos de Sangre</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvIqaDUC48dwfd7taKczB7909Qg.jpg"
+                alt="pelicula 28 años después"
+              />
+              <p>28 Años Después</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/original/kJiTA2CBGEr3He3kSt2lLTvTuEB.jpg"
+                alt="pelicula ne zha 2"
+              />
+              <p>Ne Zha 2</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rovpt08A266rqRWRzxDlEhJ5Uo.jpg"
+                alt="pelicula f1"
+              />
+              <p>F1</p>
+            </div>
+            <div class="movie">
+              <img
+                src="./img/portada no disponible.jpg"
+                alt="pelicula independiente"
+              />
+              <p>Película Independiente</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/haOjJGUV00dKlZaJWgjM1UD1cJV.jpg"
+                alt="pelicula misión imposible"
+              />
+              <p>Misión Imposible: Sentencia Final</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5eMnZjgvSGafnbjTikiA3iIqT3Y.jpg"
+                alt="pelicula something beautiful"
+              />
+              <p>Miley Cyrus: Something Beautiful</p>
+            </div>
+          </div>
+
+          <button class="arrow right" onclick="scrollCarousel(1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+      <div class="more-movie-btn">Más películas</div>
+
+      <div class="location-contact-section">
+        <div class="gradient-text">
+          <span>Cuando quieras encontrarnos</span>
+        </div>
+        <div class="location-foto">
+          <div class="location-foto-card">
+            <div id='map' class="location-foto-img">
+              <!-- <img src="../source/map.png" alt="map" /> -->
+            </div>
+            <span class="location-foto-text">Estamos aquí</span>
+          </div>
+          <div class="location-foto-card">
+            <div class="location-foto-img">
+              <img src="../source/frontside.png" alt="frontside" />
+            </div>
+            <span class="location-foto-text">Nos vemos así</span>
+          </div>
+        </div>
+        <div class="bg-video">
+          <video
+            class="video-bg-second"
+            src="../source/second.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+        </div>
+        <div id="contact-scroll-page" class="contact">
+          <!-- MARISOL -->
+          <div class="contact-section">
+            <div class="info-side">
+              <div class="info-box">
+                <h2>¿Quieres contactar con nosotros?</h2>
+              </div>
+            </div>
+
+            <div class="form-side">
+              <form id="Contactanos">
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                />
+                <input
+                  type="text"
+                  id="contacto"
+                  name="contacto"
+                  placeholder="Tu número de teléfono o email"
+                />
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="5"
+                  placeholder="Tu mensaje"
+                ></textarea>
+                <button type="submit">ENVIAR MENSAJE</button>
+              </form>
+
+              <p class="phone-info">O llama por teléfono: +34 984 29 34 96</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <footer id="footer">
+    
+    </footer>
+
+    <div class="modal-overlay" id="modal-booking">
+      <div class="modal-content">
+        <button class="close-modal-btn">&times;</button>
+        <div class="contact-section">
+          <div class="info-side">
+            <div class="info-box">
+              <h2>Reserva tu sala privada</h2>
+            </div>
+          </div>
+
+          <div class="form-side">
+            <form id="BookingForm">
+              <input
+                type="text"
+                id="bokkingName"
+                name="nombre"
+                placeholder="Tu nombre y apellido"
+                required
+              />
+              <input
+                type="text"
+                id="BookingContact"
+                name="contacto"
+                placeholder="Tu número de teléfono o email"
+                required
+              />
+              <input type="date" id="bookingDate" name="date" required />
+              <input
+                type="number"
+                id="BookingPeople"
+                name="personas"
+                placeholder="Nº de personas"
+                min="3"
+                required
+              />
+              <textarea
+                id="bookingMessage"
+                name="message"
+                rows="4"
+                placeholder="¿Alguna petición especial? (ej: película, catering...)"
+              ></textarea>
+              <button type="submit">SOLICITAR RESERVA</button>
+            </form>
+            <p class="phone-info">
+              O llama para confirmar disponibilidad si lo prefieres
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="../layout.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=initMap"></script>
+  </body>
+</html>
