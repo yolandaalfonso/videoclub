@@ -21,6 +21,8 @@ let idEditando = null;
 
 //Tratamiento imagen para subir archivo
 
+const IMAGEN_POR_DEFECTO = "./img/portada_no_disponible.jpg";
+
 // Función para convertir archivo a Base64
 function convertirArchivoABase64(file) {
   return new Promise((resolve, reject) => {
@@ -107,7 +109,7 @@ portada.addEventListener('change', async function(e) {
   }
 }*/
 
-// Versión con debug para identificar el problema
+// Versión con debug para identificar problemas
 async function cargarPeliculas() {
   grid.innerHTML = "";
 
@@ -146,7 +148,7 @@ async function cargarPeliculas() {
       if (pelicula.portada && pelicula.portada !== 'null' && pelicula.portada !== '') {
         html += `<img src="${pelicula.portada}" alt="Portada de ${pelicula.titulo || 'Sin título'}" style="max-width: 150px; height: auto;"><br><br>`;
       } else {
-        html += `<div style="width: 150px; height: 200px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">Sin imagen</div>`;
+        html += `<img src="${IMAGEN_POR_DEFECTO}" alt="Portada no disponible" style="max-width: 150px; height: auto;"><br><br>`;
       }
       
       // Información básica con valores por defecto
@@ -197,15 +199,15 @@ async function cargarPeliculas() {
 formulario.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  let portadaBase64 = null;
+  let portadaBase64 = IMAGEN_POR_DEFECTO;
 
   // Si hay archivo seleccionado, convertirlo a Base64
-  if (portada.files[0]) {
+  if (portada.files && portada.files[0]) {
     try {
       portadaBase64 = await convertirArchivoABase64(portada.files[0]);
     } catch (error) {
-      alert("Error al procesar la imagen");
-      return;
+      alert("Error al procesar la imagen, se usará la imagen por defecto");
+      portadaBase64 = IMAGEN_POR_DEFECTO;
     }
   } else if (modoEdicion) {
     // Si estamos editando y no hay archivo nuevo, mantener la imagen actual
