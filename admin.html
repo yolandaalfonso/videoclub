@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panel de administración de películas</title>
-    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="styles/admin.css" />
   </head>
   <body>
     <div class="admin-header">
@@ -36,16 +36,28 @@
         <label>Género</label>
         <div class="checkbox-group">
           <label>
-            <input type="checkbox" name="genero" value="Comedia" /> Comedia
+            <input type="checkbox" name="genero" value="comedia" /> comedia
           </label>
           <label>
-            <input type="checkbox" name="genero" value="Accion" /> Acción
+            <input type="checkbox" name="genero" value="accion" /> acción
           </label>
           <label>
-            <input type="checkbox" name="genero" value="Drama" /> Drama
+            <input type="checkbox" name="genero" value="drama" /> drama
           </label>
           <label>
-            <input type="checkbox" name="genero" value="Terror" /> Terror
+            <input type="checkbox" name="genero" value="terror" /> terror
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="fantasía" /> fantasía
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="ciencia ficción" /> ciencia ficción
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="romántica" /> romántica
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="fantasía" /> crimen
           </label>
         </div>
 
@@ -58,6 +70,6 @@
       </form>
       <div id="gridContainer"></div>
     </div>
-    <script src="crud.js"></script>
+    <script src="scripts/crud.js"></script>
   </body>
 </html>

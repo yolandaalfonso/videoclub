@@ -60,12 +60,15 @@ async function cargarPeliculas() {
       const year = pelicula.año || pelicula.anno || '';
       const tr = document.createElement("tr");
       tr.innerHTML = `
-        <td><img src="${pelicula.portada || 'https://placehold.co/60x90/0d0c1d/ff3cac?text=No+Img'}" alt="Póster"></td>
+        <td><img src="${pelicula.portada}" 
+             onerror="this.src='img/covers/portada_no_disponible.jpg'" 
+             alt="Portada de ${pelicula.titulo}" 
+             ></td>
         <td>${pelicula.titulo || ''}</td>
         <td>${year}</td>
         <td>${pelicula.duracion || ''} min</td>
         <td>${(pelicula.genero || []).join(', ')}</td>
-        <td>${pelicula.disponible || ''}</td>
+        <td>${pelicula.disponible === true ? 'Sí' : pelicula.disponible === false ? 'No' : 'No especificado'}</td>
         <td>
           <button class="table-action-btn" data-edit="${pelicula.id}">Editar</button>
           <button class="table-action-btn delete" data-delete="${pelicula.id}">Eliminar</button>
