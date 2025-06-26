@@ -11,8 +11,12 @@ body {
 /* Header - ahora contiene una imagen y un título */
 #header {
   width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 20px;
   background-color: #0D0D1A; /* Fondo negro para el header */
   padding: 10px 20px;
+  position: relative;
   display: flex;
   flex-direction: column; /* Coloca los elementos en columna (imagen arriba, título abajo) */
   align-items: center; /* Centra horizontalmente la imagen y el título */
@@ -42,6 +46,28 @@ body {
   text-shadow: 0 0 25px #FF3CAC; /* Efecto neón */
 }
 
+#admin-button {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: 20px;
+  background-color: #9D4EDD;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#admin-button:hover {
+  background-color: #7B2CBF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 /* Contenedor principal */
 main {
