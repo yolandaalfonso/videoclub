@@ -11,7 +11,7 @@ document.getElementById('cerrarBtn').addEventListener('click', () => {
 
 document.getElementById('agregarBtn').addEventListener('click', () => {
   const titulo = document.getElementById('titulo').value;
-  const año = document.getElementById('año').value;
+  const anno = document.getElementById('anno').value;
   const duracion = document.getElementById('duracion').value;
   const portada = document.getElementById('portada').value;
 
@@ -21,7 +21,7 @@ document.getElementById('agregarBtn').addEventListener('click', () => {
 
   const nuevaPelicula = {
     titulo,
-    año,
+    anno,
     duracion,
     portada,
     genero: generos,

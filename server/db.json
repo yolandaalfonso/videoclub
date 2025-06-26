@@ -13,16 +13,13 @@
       "disponible": true
     },
     {
-      "id": "terminator2",
       "titulo": "Terminator 2",
-      "genero": [
-        "acción",
-        "ciencia ficción"
-      ],
-      "anno": "1991",
-      "duracion": "135",
+      "anno": 1991,
+      "duracion": 134,
       "portada": "img/covers/terminator2.jpg",
-      "disponible": false
+      "genero": "Acción",
+      "disponibilidad": true,
+      "id": "terminator2"
     },
     {
       "id": "persiguiendoaamy",
@@ -241,12 +238,12 @@
       "disponible": true
     },
     {
-      "id": "b915",
-      "titulo": "ethrthr",
-      "anno": "45457",
-      "duracion": "45645",
-      "portada": "dfhdfbd",
-      "genero": "Drama",
+      "id": "ecdb",
+      "titulo": "dragon ball",
+      "anno": 2020,
+      "duracion": 90,
+      "portada": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/i1lMlxir5E4jyeLlqS2bK1Cn3Tt.jpg",
+      "genero": "Acción, Aventura",
       "disponibilidad": true
     }
   ]

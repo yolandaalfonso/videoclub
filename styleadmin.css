@@ -1,70 +1,240 @@
+/* style.css */
+
 body {
-  background-color: #0d0c1d;
-  font-family: Arial, sans-serif;
-  color: #ccc;
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0eb;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+.grid-item {
+    background: #20203a;
+    padding: 20px;
+    border-radius: 12px;
+    color: #e0e0eb;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+.grid-item img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.grid-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007bff;
+    font-weight: 600;
+}
+.grid-item p {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.btn-borrar {
+    background-color: #dc3545;
+}
+.btn-borrar:hover {
+    background-color: #c82333;
+}
+.btn-editar {
+    background-color: #ffc107;
+    color: #333;
+}
+.btn-editar:hover {
+    background-color: #e0a800;
 }
 
-#adminBtn {
-  margin: 20px;
-  padding: 10px 20px;
-  background: #3399ff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
+/* Modal Styles */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(10, 10, 25, 0.95);
-  justify-content: center;
-  align-items: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-
 .modal-content {
-  background-color: #1e1e2f;
-  border-radius: 10px;
-  padding: 30px;
-  width: 400px;
-  box-shadow: 0 0 15px #3399ff;
+    background-color: #2c2c44;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
 }
-
-input[type="text"], input[type="number"] {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0 15px;
-  background: #0d0c1d;
-  border: 1px solid #3399ff;
-  color: #fff;
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
 }
-
-.checkbox-group label {
-  display: block;
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
-
-#agregarBtn {
-  background: #3399ff;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  margin-top: 15px;
-  width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
+.close-btn:hover,
+.close-btn:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
-
-#cerrarBtn {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #999;
-  padding: 10px;
-  margin-top: 10px;
-  width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
+.modal-content h2 {
+    color: #007bff;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+.modal-content label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e0e0eb;
+    font-weight: 600;
+}
+.modal-content input[type="text"],
+.modal-content input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #4a4a60;
+    border-radius: 8px;
+    background-color: #383850;
+    color: #e0e0eb;
+    font-size: 1em;
+}
+.modal-content .checkbox-group,
+.modal-content .radio-group {
+    margin-bottom: 20px;
+}
+.modal-content .checkbox-group label,
+.modal-content .radio-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    font-weight: 400;
+}
+.modal-content input[type="checkbox"],
+.modal-content input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    accent-color: #007bff; /* Custom color for checked state */
+}
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.modal-buttons button {
+    width: 48%;
+    padding: 12px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+/* Custom Alert/Confirm Modals */
+#customAlertModal, #customConfirmModal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Added class for modal dialogs for consistency */
+.modal-dialog-custom {
+    background-color: #2c2c44;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #e0e0eb;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #4a4a60;
+}
+#customAlertMessage, #customConfirmMessage {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #e0e0eb;
+}
+#customAlertOkBtn, #customConfirmYesBtn, #customConfirmNoBtn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#customAlertOkBtn { background-color: #007bff; color: white; }
+#customAlertOkBtn:hover { background-color: #0056b3; }
+#customConfirmYesBtn { background-color: #28a745; color: white; margin-right: 15px;}
+#customConfirmYesBtn:hover { background-color: #218838; }
+#customConfirmNoBtn { background-color: #dc3545; color: white; }
+#customConfirmNoBtn:hover { background-color: #c82333; }
+#customConfirmModal > div > div {
+    display: flex;
+    justify-content: center;
 }
