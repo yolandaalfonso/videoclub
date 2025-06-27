@@ -20,25 +20,26 @@ Este proyecto tiene como objetivo **rediseñar el sitio web antiguo del videoclu
 
 ## 🧩 Estructura del proyecto
 
+```
 📁 videoclub
 ├── 📁 img
-│ └── 📁 covers
-│ ├── muchas fotos
-│ └── tigerheader.png
+│   └── 📁 covers
+│   ├── muchas fotos
+│   └── tigerheader.png
 ├── 📁 scripts
-│ ├── catalogo.js
-│ ├── crud.js
-│ ├── layout.js
-│ └── main.js
+│   ├── catalogo.js
+│   ├── crud.js
+│   ├── layout.js
+│   └── main.js
 ├── 📁 server
-│ └── db.json
+│   └── db.json
 ├── 📁 source
-│ └── muchas fotos
+│   └── muchas fotos
 ├── 📁 styles
-│ ├── admin.css
-│ ├── catalogo.css
-│ ├── layout.css
-│ └── main.css
+│   ├── admin.css
+│   ├── catalogo.css
+│   ├── layout.css
+│   └── main.css
 ├── .gitignore
 ├── admin.html
 ├── catalogo.html
@@ -46,6 +47,7 @@ Este proyecto tiene como objetivo **rediseñar el sitio web antiguo del videoclu
 ├── package-lock.json
 ├── package.json
 └── README.md
+```
 
 ## 🔍 Comparación: Diseño antiguo vs nuevo
 
