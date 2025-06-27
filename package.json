@@ -1,13 +1,14 @@
 {
   "dependencies": {
     "json-server": "^1.0.0-beta.3",
-    "node-modules": "^1.0.1"
+    "node-modules": "^0.0.1"
   },
   "name": "videoclub",
   "version": "1.0.0",
   "main": "layout.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "json-server --watch server/db.json"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,5 @@
     "url": "https://github.com/yolandaalfonso/videoclub/issues"
   },
   "homepage": "https://github.com/yolandaalfonso/videoclub#readme",
-  "description": ""
+  "description": "Este proyecto tiene como objetivo **rediseñar el sitio web antiguo del videoclub** para hacerlo más moderno, fácil de usar. Buscamos mejorar la apariencia visual del sitio, la navegación y la experiencia general del usuario."
 }
