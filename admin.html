@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de administración de películas</title>
+    <link rel="stylesheet" href="styles/admin.css" />
+  </head>
+  <body>
+    <div class="admin-header">
+      <h1>Panel de administración de películas</h1>
+      <button id="adminBtn">Añadir nueva película</button>
+    </div>
+    <div class="admin-content">
+      <h2 id="tituloFormulario">Añadir película</h2>
+      <form id="formulario" class="hidden">
+        <label>Título</label>
+        <input type="text" id="titulo" required />
+
+        <label>Año</label>
+        <input type="number" id="año" required />
+
+        <label>Duración</label>
+        <input type="number" id="duracion" required />
+
+        <label>Póster (archivo)</label>
+        <input type="file" id="portada" accept="image/*" />
+        <img
+          id="preview"
+          class="hidden"
+          src=""
+          alt="Vista previa"
+          style="width: 100%; margin-bottom: 10px"
+        />
+
+        <label>Género</label>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="genero" value="comedia" /> comedia
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="accion" /> acción
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="drama" /> drama
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="terror" /> terror
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="fantasía" /> fantasía
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="ciencia ficción" /> ciencia ficción
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="romántica" /> romántica
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="fantasía" /> crimen
+          </label>
+        </div>
+
+        <label>Disponible</label>
+        <label><input type="radio" name="disponible" value="Sí" /> Sí</label>
+        <label><input type="radio" name="disponible" value="No" /> No</label>
+
+        <button type="submit" id="btnGuardarForm">Guardar</button>
+        <button type="button" id="btnCancelarForm">Cancelar</button>
+      </form>
+      <div id="gridContainer"></div>
+    </div>
+    <script src="scripts/crud.js"></script>
+  </body>
+</html>
