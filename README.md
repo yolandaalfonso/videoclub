@@ -2,52 +2,65 @@
 
 ## 📌 Objetivo del proyecto
 
-Este proyecto tiene como objetivo **rediseñar el sitio web antiguo del videoclub** para hacerlo más moderno, fácil de usar y adaptable a dispositivos móviles. Buscamos mejorar la apariencia visual del sitio, la navegación y la experiencia general del usuario.
+Este proyecto tiene como objetivo **rediseñar el sitio web antiguo del videoclub** para hacerlo más moderno, fácil de usar. Buscamos mejorar la apariencia visual del sitio, la navegación y la experiencia general del usuario.
 
 ## 🛠️ Tecnologías utilizadas
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Node.js  
-- Figma  
-- Git  
+- HTML5
+- CSS3
+- JavaScript
+- Node.js
+- Figma
+- Git
 - Jira
 
 ## 🚧 Estado
 
-🔧 En proceso de rediseño
+✅ Listo
 
 ## 🧩 Estructura del proyecto
 
-📁 videoclub85-redesign
-├── 📁 design – maquetas y prototipos (Figma, PNG, JPG)
-├── 📁 src – código fuente
-│ ├── index.html
-│ ├── styles/
-│ └── scripts/
-├── 📁 public – recursos públicos (imágenes, fuentes, iconos)
-├── 📁 screenshots – capturas del diseño antiguo y nuevo
-│ ├── old-design.png
-│ └── new-design-placeholder.png
-├── 📄 README.md – descripción del proyecto
-└── 📄 package.json – configuración de Node.js (si es necesario)
-
-
-> 📝 *La estructura del proyecto puede cambiar durante el desarrollo.*
+📁 videoclub
+├── 📁 img
+│ └── 📁 covers
+│ ├── muchas fotos
+│ └── tigerheader.png
+├── 📁 scripts
+│ ├── catalogo.js
+│ ├── crud.js
+│ ├── layout.js
+│ └── main.js
+├── 📁 server
+│ └── db.json
+├── 📁 source
+│ └── muchas fotos
+├── 📁 styles
+│ ├── admin.css
+│ ├── catalogo.css
+│ ├── layout.css
+│ └── main.css
+├── .gitignore
+├── admin.html
+├── catalogo.html
+├── index.html
+├── package-lock.json
+├── package.json
+└── README.md
 
 ## 🔍 Comparación: Diseño antiguo vs nuevo
 
 ### Diseño antiguo
 
+![Diseño antiguo](source/old-design.png)
 
-### Nuevo diseño 
+### Nuevo diseño
 
+![Nuevo diseño](source/new-design.png)
 
 ## 👥 Equipo
 
-- [@dmbiee](https://github.com/dmbiee)  
-- [@LinCarbajales](https://github.com/LinCarbajales)  
-- [@yolandaalfonso](https://github.com/yolandaalfonso)  
-- [@migueroder](https://github.com/migueroder)  
+- [@dmbiee](https://github.com/dmbiee)
+- [@LinCarbajales](https://github.com/LinCarbajales)
+- [@yolandaalfonso](https://github.com/yolandaalfonso)
+- [@migueroder](https://github.com/migueroder)
 - [@Marisol-Mancera](https://github.com/Marisol-Mancera)
